@@ -34,17 +34,6 @@ let getData = () =>{
 	Country = $country.val();
 	Password1 = $pass1.val();
 	Password2 = $pass2.val();
-	console.log("got data:");
-	console.log(FirstName);
-	console.log(SecondName);
-	console.log(Email);
-	console.log(PhoneNumber);
-	console.log(Institute);
-	console.log(City);
-	console.log(State);
-	console.log(Country);
-	console.log(Password1);
-	console.log(Password2);
 }
 
 let	validate = () =>{
@@ -52,7 +41,6 @@ let	validate = () =>{
 }
 
 let initializeJsonObject = () =>{
-	console.log('initializing Json data');
 	jsonObject = {
 		'first_name': FirstName,
 		'second_name': SecondName,
@@ -72,13 +60,12 @@ let InsertToDB = () =>{
 		url:'php/registration.php',
 		data: {myData:jsonObject},
 		success: function(response) {
-			console.log('success response');
-            console.log(response);
+			alert('Successfully added your record');
         },
         error: function(response) {
-        	console.log('fail response');
-            console.log(response);
-        }
+        	alert('Failed to add your record added your record , check console for error');
+        	console.log(response)
+        }	
 	});
 }
 

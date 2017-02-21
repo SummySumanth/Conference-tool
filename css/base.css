@@ -1,0 +1,47 @@
+
+.custom-row{
+	margin-left: 0px;
+	margin-right: 0px;
+	width: 100%;
+}
+.back-drop-img {
+	position: fixed;
+	z-index: 0;
+    background-image: url("../imgs/clg-gate.png");
+    background-color: #cccccc;
+    background-repeat: no-repeat;	
+}
+
+.nav-bar{
+	position: fixed;
+	z-index: 2;
+	background-color: #fff;
+	width: 100%;
+	height: 70px;
+	box-shadow: 3px 5px 13px -4px #9E9E9E;
+	-webkit-box-shadow: 3px 5px 13px -4px #9E9E9E;
+	-moz-box-shadow: 3px 5px 13px -4px #9E9E9E;
+	-o-box-shadow: 3px 5px 13px -4px #9E9E9E;
+}
+
+.nav-item{
+	  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav-logo{
+	width: 320px;
+}
+
+.nav-github-logo{
+	width: 155px;
+}
+.center-card{
+	/*position: absolute;*/
+	z-index: 1;
+	background-color: rgba(255, 255, 255, 0.97);
+	padding: 50px;
+	margin: 90px 20px;
+	border-radius: 5px;
+}
