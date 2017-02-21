@@ -9,6 +9,6 @@
 		if ($db_conn->connect_error) {
 		    die("Connection failed: " . $db_conn->connect_error);
 		} 
-		echo "Connected successfully " . "<br><br><br>";
+		echo "Connected successfully \n";
 		//
 ?>
