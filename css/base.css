@@ -1,9 +1,15 @@
 
 .custom-row{
-	margin-left: 0px;
-	margin-right: 0px;
-	width: 100%;
+	margin:? 0px;
+	    max-width: 100% !important;
+	/*width: 100%;*/
+	/*max-width: 100%;*/
 }
+
+.custom-columns{
+	padding: 0px;
+}
+
 .back-drop-img {
 	position: fixed;
 	z-index: 0;
@@ -34,13 +40,17 @@
 	width: 320px;
 }
 
+.nav-jnnce-logo{
+	width: 100px;
+	margin-left: 30px;
+}
 .nav-github-logo{
 	width: 155px;
 }
 .center-card{
 	/*position: absolute;*/
 	z-index: 1;
-	background-color: rgba(255, 255, 255, 0.97);
+	background-color: rgba(255, 255, 255, 0.87);
 	padding: 50px;
 	margin: 90px 20px;
 	border-radius: 5px;
