@@ -37,19 +37,21 @@ if($_POST);
 	$FKey = mysql_real_escape_string('0');
 
 
-	$sql ="INSERT INTO participants VALUES('"
-	. $FirstName 
-	. $SecondName 
-	. $Email 
-	. $Phone 
-	. $institute 
-	. $City 
-	. $State 
-	. $Country 
-	. $PassKey 
-	. $GKey 
-	. $FKey .
-	"')";
+
+
+	$sql ="INSERT INTO participants(FirstName, SecondName, Email, PhoneNumber, Institution, City, State, Country, PassKey, GoogleKey, FacebookKey) VALUES(
+		'" . $FirstName . "' , 
+		'" . $SecondName . "' ,
+		'" . $Email . "' ,
+		'" . $Phone . "' ,
+		'" . $Institute . "' ,
+		'" . $City . "' ,
+		'" . $State . "' ,
+		'" . $Country . "' ,
+		'" . $PassKey . "' ,
+		'" . $GKey . "' ,
+		'" . $FKey . "' 
+		)";
 	$result = mysqli_query($db_conn,$sql);
 
 	if (!$result) {
