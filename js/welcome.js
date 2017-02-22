@@ -1,3 +1,6 @@
+
+let $signupContainer = $('#signup-container');
+
 let $fname = $('#first_Name');
 let $sname = $('#second_Name');
 let $email = $('#email');

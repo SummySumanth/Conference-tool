@@ -1,6 +1,12 @@
+
+#signup-container{
+	display: none;
+}
+
 body{
 	font-family: 'Roboto Condensed', sans-serif;
 }
+
 .custom-row{
 	margin: 0px;
 	max-width: 100% !important;
