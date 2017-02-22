@@ -10,30 +10,40 @@
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/css/foundation-flex.css">
 	<link rel="stylesheet" type="text/css" href="css/base.css">
 	<link rel="stylesheet" type="text/css" href="css/signup.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<!-- <meta http-equiv="refresh" content="3"> -->
 
 	<img class="back-drop-img" src="imgs/clg-gate.png">
 
 	<div class="small-12 columns custom-columns" style="postion:absolute; background-color: #bcbcbc; height: 70px;width: 100px; z-index: 4; width: 100%">
 		<div class="row custom-row nav-bar">
-			<div class="small-4 columns " >
-				<a href="http://jnnce.ac.in" target="blank">
-					<img class="nav-jnnce-logo nav-item" src="imgs/jnnce-logo.png" >
-				</a>
-
-			</div>
-
+			<a class="small-4 columns" href="http://jnnce.ac.in" target="blank">
+				<img class="nav-jnnce-logo nav-item" src="imgs/jnnce-logo.png" >
+			</a>
 			<a class="small-4  small-centered columns" href="#" style="text-align: center;">
 				<img class="nav-CMT-logo nav-item" src="imgs/nav-bar-logo2.png">
 			</a>
-
-			
 			<a class="small-4 columns github-logo" href="https://github.com/SummySumanth/Conference-tool" target="blank">
 				<img class="nav-github-logo nav-item" src="imgs/github-logo.png">
 			</a>
-		
 		</div>
 	</div>
+
+
+		<!-- Controllers for Dev Purpose -->
+	<div class="small-12 columns custom-columns" style="postion:absolute; background-color: #000; height: 20px;width: 100px; z-index: 4; width: 100%">
+		<div class="row custom-row nav-bar2" style="background-color: #000;">
+			<div style="margin: 0px 30px; background-color: red" id="welcome-reveal-show">Welcome Show</div>
+			<div style="margin: 0px 30px; background-color: red" id="welcome-reveal-hide">Welcome Hide</div>
+			<div style="margin: 0px 30px; background-color: blue" id="signin-reveal-show">sign in modal Show</div>
+			<div style="margin: 0px 30px; background-color: blue" id="signin-reveal-hide">sign in modal Hide</div>
+			<div style="margin: 0px 30px; background-color: green" id="signup-reveal-show">sign up modal Show</div>
+			<div style="margin: 0px 30px; background-color: green" id="signup-reveal-hide">sign up modal Hide</div>
+		</div>
+	</div>
+
+
+
 
 
 	<div id="signup-container">
@@ -42,13 +52,13 @@
 				
 			</div>
 
-			<div class="small-10 medium-6 large-8 small-centered columns center-card custom-columns">
+			<div class="small-10 medium-6 large-8 small-centered columns custom-columns center-card">
 				<div class="small-12 columns card-header ">
 					<span style="width: 100%">Create your account</span>
 				</div>
 				
 
-				<div class="row form-container">
+				<div class="row form-container ">
 					<div class="small-12 medium-6 columns social-signup-container">
 						<a href="#"><img class="social-sign-up" src="imgs/google-sign-up.png"></a>
 					</div>
@@ -82,10 +92,6 @@
 			</div>
 		</div>
 	</div>
-
-
-
-
 	
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript" src='js/welcome.js'></script>

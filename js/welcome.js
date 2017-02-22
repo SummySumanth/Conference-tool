@@ -1,3 +1,9 @@
+let $sinupRevealShow = $('#signup-reveal-show');
+let $sinupRevealHide = $('#signup-reveal-show');
+
+
+
+
 
 let $signupContainer = $('#signup-container');
 
@@ -78,6 +84,28 @@ let init = () =>{
 	initializeJsonObject();
 	InsertToDB();
 }
+
+
+
+let hideSignupModal = () =>{
+		$signupContainer.removeClass('animated slideInRight');
+		$signupContainer.addClass('animated slideOutLeft')
+}
+
+let showSignupModal = () =>{
+	$signupContainer.css('display', 'block');
+	$signupContainer.addClass('animated slideInRight');
+}
+
+$sinupRevealShow.on('click', () =>{
+		console.log('show clicked');
+	showSignupModal();
+});
+
+
+
+
+
 
 $submit.on('click', () =>{
 	init();
