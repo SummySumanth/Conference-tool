@@ -79,7 +79,7 @@ body{
 	background-color: rgba(255, 255, 255, 0.87);
 	
 	margin: 60px 0px 55px 0px;
-	border-radius: 5px;
+	border-radius: 2px;
 box-shadow: 5px 5px 26px -6px #000000;
 -webkit-box-shadow: 5px 5px 26px -6px #000000;
 -moz-box-shadow: 5px 5px 26px -6px #000000;
@@ -99,7 +99,9 @@ box-shadow: 5px 5px 26px -6px #000000;
 	background-image:  url("imgs/gradient-bg.jpg");
 }
 
-
+.signin-form-container{
+	padding: 15px 20px 15px 20px;
+}
 .form-container{
 	padding: 15px 40px 15px 40px;
 }
@@ -111,14 +113,12 @@ box-shadow: 5px 5px 26px -6px #000000;
 .social-sign-up{
 	width: 330px;
 	margin-bottom: 25px;
+	border-radius: 3px;
 	transition: 0.25s ease-in-out;
 }
 
 .social-sign-up:hover {
-box-shadow: 0px -1px 17px 4px #ABABAB;
--webkit-box-shadow: 0px -1px 17px 4px #ABABAB;
--moz-box-shadow: 0px -1px 17px 4px #ABABAB;
--o-box-shadow: 0px -1px 17px 4px #ABABAB;
+box-shadow: 0px 0px 17px #ABABAB;
 }
 
 #submit_button{
