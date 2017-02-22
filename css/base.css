@@ -1,0 +1,108 @@
+body{
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.custom-row{
+	margin: 0px;
+	max-width: 100% !important;
+	/*width: 100%;*/
+	/*max-width: 100%;*/
+}
+
+.custom-columns{
+	padding: 0px;
+}
+
+.back-drop-img {
+	position: fixed;
+	z-index: 0;
+	background-image: url("../imgs/clg-gate.png");
+	background-color: #cccccc;
+	background-repeat: no-repeat;	
+}
+
+.nav-bar{
+	position: fixed;
+	z-index: 2;
+	background-color: #fff;
+	width: 100%;
+	height: 70px;
+	box-shadow: 3px 5px 13px -4px #9E9E9E;
+	-webkit-box-shadow: 3px 5px 13px -4px #9E9E9E;
+	-moz-box-shadow: 3px 5px 13px -4px #9E9E9E;
+	-o-box-shadow: 3px 5px 13px -4px #9E9E9E;
+}
+
+.nav-item{
+	margin-top: 25px;
+}
+
+.nav-CMT-logo{
+	width: 320px;
+}
+
+.nav-jnnce-logo{
+	width: 100px;
+}
+.github-logo{
+	text-align: right;
+}
+.nav-github-logo{
+
+	margin-top: 16px;
+	width: 118px;
+}
+
+.sign-up-header{
+	text-align: center;
+}
+
+.center-card{
+	/*position: absolute;*/
+	z-index: 1;
+	background-color: rgba(255, 255, 255, 0.87);
+	
+	margin: 60px 0px 55px 0px;
+	border-radius: 5px;
+box-shadow: 5px 5px 26px -6px #000000;
+-webkit-box-shadow: 5px 5px 26px -6px #000000;
+-moz-box-shadow: 5px 5px 26px -6px #000000;
+-o-box-shadow: 5px 5px 26px -6px #000000;
+
+
+}
+
+.card-header{
+	text-align: center;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size:30px;
+	color:#424242;
+	height: 45px;
+	border-top-right-radius: 5px;	
+	border-top-left-radius: 5px;	
+	background-image:  url("imgs/gradient-bg.jpg");
+}
+
+.form-container{
+	padding: 15px 40px 15px 40px;
+}
+
+.social-signup-container{
+	text-align: center;
+}
+
+.social-sign-up{
+	width: 330px;
+	margin-bottom: 25px;
+	transition: 0.25s ease-in-out;
+}
+
+.social-sign-up:hover {
+box-shadow: 0px -1px 17px 4px #ABABAB;
+-webkit-box-shadow: 0px -1px 17px 4px #ABABAB;
+-moz-box-shadow: 0px -1px 17px 4px #ABABAB;
+-o-box-shadow: 0px -1px 17px 4px #ABABAB;
+}
+
+#submit_button{
+	width: 100%;
+}
