@@ -1,11 +1,12 @@
 let $sinupRevealShow = $('#sign-up-reveal');
-let $sininRevealShow = $('#sign-in-reveal');
+let $signInReveal = $('#sign-in-reveal');
 
 
 
 
 
 let $signupContainer = $('#signup-container');
+let $signinContainer = $('#signin-container');
 let $welcomeContainer = $('#welcome-container');
 
 let $fname = $('#first_Name');
@@ -98,22 +99,40 @@ let showSignupModal = () =>{
 	$signupContainer.addClass('animated slideInRight');
 }
 
+let hideSignInModal = () =>{
+		$signinContainer.removeClass('animated slideInRight');
+		$signinContainer.addClass('animated slideOutLeft')
+}
+
+let showSignInModal = () =>{
+	$signinContainer.css('display', 'block');
+	$signinContainer.addClass('animated slideInRight');
+}
+
 let hideWelcomeModal = () =>{
 	$welcomeContainer.removeClass('animated slideInRight');
 	$welcomeContainer.addClass('animated slideOutLeft')
 };
 
 $sinupRevealShow.on('click', () =>{
-		console.log('show clicked');
+	console.log('show clicked');
 	hideWelcomeModal();
 	$welcomeContainer.on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', () =>{
 		$welcomeContainer.css('display', 'none');
-		showSignupModal();
+		showSignInModal();
 	})
 	
 });
 
-
+$signInReveal.on('click', () =>{
+	console.log('show clicked');
+	hideWelcomeModal();
+	$welcomeContainer.on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', () =>{
+		console.log('animatione');
+		$welcomeContainer.css('display', 'none');
+		showSignInModal();
+	});
+})
 
 
 
