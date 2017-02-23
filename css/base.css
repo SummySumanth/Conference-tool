@@ -1,10 +1,41 @@
+#welcome-container{
+	/*display: none;*/
+}
 
 #signup-container{
 	display: none;
 }
 
+#signin-container{
+	display: none
+}
+#sign-up-here{
+	color: #7cb1f2;
+	cursor:pointer;
+    font-size: 20px;
+}
 body{
 	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.sign-create{
+	cursor:pointer;
+	height: 30px;
+	width: 300px;
+	padding: 5px;
+	background-color: #5eb1ff;
+	margin: 20px 0px 20px 60px;
+	color: #fff;
+	border-radius: 3px;
+		transition: 0.25s ease-in-out;
+
+}
+
+.sign-create:hover{
+	box-shadow: 0px 0px 17px #ABABAB;
+}
+.social-signin-container{
+	text-align: center;
 }
 
 .custom-row{
@@ -16,6 +47,13 @@ body{
 	padding: 0px;
 }
 
+.custom-input-field{
+	margin: 0px 5px;
+}
+
+.user-name-input{
+	margin: 15px 0px;
+}
 .back-drop-img {
 	position: fixed;
 	z-index: 0;
@@ -73,6 +111,10 @@ body{
 	text-align: center;
 }
 
+.usr-pass-signin-container{
+	text-align: center;
+	padding-right: 10px !important;
+}
 .center-card{
 	/*position: absolute;*/
 	z-index: 1;

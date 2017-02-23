@@ -31,7 +31,7 @@
 
 
 		<!-- Controllers for Dev Purpose -->
-	<div class="small-12 columns custom-columns" style="postion:absolute; background-color: #000; height: 20px;width: 100px; z-index: 4; width: 100%">
+<!-- 	<div class="small-12 columns custom-columns" style="postion:absolute; background-color: #000; height: 20px;width: 100px; z-index: 4; width: 100%">
 		<div class="row custom-row nav-bar2" style="background-color: #000;">
 			<div style="margin: 0px 30px; background-color: red" id="welcome-reveal-show">Welcome Show</div>
 			<div style="margin: 0px 30px; background-color: red" id="welcome-reveal-hide">Welcome Hide</div>
@@ -41,15 +41,58 @@
 			<div style="margin: 0px 30px; background-color: green" id="signup-reveal-hide">sign up modal Hide</div>
 		</div>
 	</div>
+ -->
+
+ 
+	<div id="welcome-container">
+		<div class="row custom-row">
+			<div class="small-1 medium-2 columns">
+			</div>
+			<div class="small-10 medium-8 small-centered columns custom-columns center-card">
+				<div class="small-12 columns card-header ">
+					<span style="width: 100%">Conference Management Tool</span>
+				</div>
+
+				<div class="row signin-form-container">
+					
+
+					<div class="small-12 columns" style="height: 1px; width: 50%; background-color: #828282; "></div>
+
+					<div class="row custom-row small-12 columns custom-columns usr-pass-signin-container">
+
+						<p style="text-align: center;">Conference management relates to the executive management of a conference either in-house within a company or for a client of a professional conference organiser (PCO). It constitutes of the basic management tools that involve planning, organising, leading and control.</p>
+					</div>	
+
+					<div class="small-12 columns" style="height: 1px; width: 50%; background-color: #828282; "></div>
+
+					<div class="small-6 columns small-centered" style="text-align: center;">
+						<div class="sign-create">
+							<span id="sign-in-reveal" >Sign In</span>
+						</div>
+						
+					</div>
 
 
+					<div class="small-6 columns small-centered" style="text-align: center;height:30px;width: 300px;">
+						<div class="sign-create" id='sign-up-reveal'>
+							<span >Create an account</span> 
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="small-1 medium-2 columns">	
+			</div>
+		</div>
+	</div>
+
+						
+						
 	<div id="signin-container">
 		<div class="row custom-row">
-			<div class="small-1 medium-3 columns">
-				
+			<div class="small-1 medium-2 columns">
 			</div>
-
-			<div class="small-10 medium-6 small-centered columns custom-columns center-card">
+			<div class="small-10 medium-8 small-centered columns custom-columns center-card">
 				<div class="small-12 columns card-header ">
 					<span style="width: 100%">Sign In</span>
 				</div>
@@ -62,13 +105,27 @@
 					<div class="small-12 medium-6 columns social-signin-container">
 						<a href="#"><img class="social-sign-up" src="imgs/facebook-sign-in.png"></a>
 					</div>
+
+					<div class="small-12 columns" style="height: 1px; width: 50%; background-color: #828282; "></div>
+
+					<div class="row custom-row small-12 columns custom-columns usr-pass-signin-container">
+
+						<span class="small-2 columns custom-columns user-name-input" style="padding-top: 8px;">User Name</span>
+						<input class="small-3 columns custom-input-field user-name-input" type="text" id="email" placeholder="YourName@website.com">
+						<br/>
+
+						<span class="small-2 columns custom-columns user-name-input" style="padding-top: 8px;">Password</span>
+						<input class="small-3 columns custom-input-field user-name-input" type="password" id="email" placeholder="YourName@website.com">
+
+						<div class="small-2 columns">
+							<img class="user-name-input" id="sign-in-btn" src="imgs/login.png">
+						</div>
+
+						<span class="small-12 columns"> Dont have a account? <span id='sign-up-here'>Sign Up Here !</span></span>	
+					</div>	
 				</div>
-
-				
 			</div>
-
-			<div class="small-1 medium-3 columns">
-				
+			<div class="small-1 medium-2 columns">	
 			</div>
 		</div>
 	</div>

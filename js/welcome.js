@@ -1,11 +1,12 @@
-let $sinupRevealShow = $('#signup-reveal-show');
-let $sinupRevealHide = $('#signup-reveal-show');
+let $sinupRevealShow = $('#sign-up-reveal');
+let $sininRevealShow = $('#sign-in-reveal');
 
 
 
 
 
 let $signupContainer = $('#signup-container');
+let $welcomeContainer = $('#welcome-container');
 
 let $fname = $('#first_Name');
 let $sname = $('#second_Name');
@@ -97,9 +98,19 @@ let showSignupModal = () =>{
 	$signupContainer.addClass('animated slideInRight');
 }
 
+let hideWelcomeModal = () =>{
+	$welcomeContainer.removeClass('animated slideInRight');
+	$welcomeContainer.addClass('animated slideOutLeft')
+};
+
 $sinupRevealShow.on('click', () =>{
 		console.log('show clicked');
-	showSignupModal();
+	hideWelcomeModal();
+	$welcomeContainer.on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', () =>{
+		$welcomeContainer.css('display', 'none');
+		showSignupModal();
+	})
+	
 });
 
 
