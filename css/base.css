@@ -1,17 +1,59 @@
+#welcome-container{
+	/*display: none;*/
+}
+
+#signup-container{
+	display: none;
+}
+
+#signin-container{
+	display: none
+}
+#sign-up-here{
+	color: #7cb1f2;
+	cursor:pointer;
+    font-size: 20px;
+}
 body{
 	font-family: 'Roboto Condensed', sans-serif;
 }
+
+.sign-create{
+	cursor:pointer;
+	height: 30px;
+	width: 300px;
+	padding: 5px;
+	background-color: #5eb1ff;
+	margin: 20px 0px 20px 60px;
+	color: #fff;
+	border-radius: 3px;
+		transition: 0.25s ease-in-out;
+
+}
+
+.sign-create:hover{
+	box-shadow: 0px 0px 17px #ABABAB;
+}
+.social-signin-container{
+	text-align: center;
+}
+
 .custom-row{
 	margin: 0px;
 	max-width: 100% !important;
-	/*width: 100%;*/
-	/*max-width: 100%;*/
 }
 
 .custom-columns{
 	padding: 0px;
 }
 
+.custom-input-field{
+	margin: 0px 5px;
+}
+
+.user-name-input{
+	margin: 15px 0px;
+}
 .back-drop-img {
 	position: fixed;
 	z-index: 0;
@@ -26,6 +68,19 @@ body{
 	background-color: #fff;
 	width: 100%;
 	height: 70px;
+	box-shadow: 3px 5px 13px -4px #9E9E9E;
+	-webkit-box-shadow: 3px 5px 13px -4px #9E9E9E;
+	-moz-box-shadow: 3px 5px 13px -4px #9E9E9E;
+	-o-box-shadow: 3px 5px 13px -4px #9E9E9E;
+}
+
+.nav-bar2{
+	position: fixed;
+	z-index: 2;
+	background-color: #fff;
+	color: #fff;
+	width: 100%;
+	height: 20px;
 	box-shadow: 3px 5px 13px -4px #9E9E9E;
 	-webkit-box-shadow: 3px 5px 13px -4px #9E9E9E;
 	-moz-box-shadow: 3px 5px 13px -4px #9E9E9E;
@@ -56,13 +111,17 @@ body{
 	text-align: center;
 }
 
+.usr-pass-signin-container{
+	text-align: center;
+	padding-right: 10px !important;
+}
 .center-card{
 	/*position: absolute;*/
 	z-index: 1;
 	background-color: rgba(255, 255, 255, 0.87);
 	
 	margin: 60px 0px 55px 0px;
-	border-radius: 5px;
+	border-radius: 2px;
 box-shadow: 5px 5px 26px -6px #000000;
 -webkit-box-shadow: 5px 5px 26px -6px #000000;
 -moz-box-shadow: 5px 5px 26px -6px #000000;
@@ -82,6 +141,9 @@ box-shadow: 5px 5px 26px -6px #000000;
 	background-image:  url("imgs/gradient-bg.jpg");
 }
 
+.signin-form-container{
+	padding: 15px 20px 15px 20px;
+}
 .form-container{
 	padding: 15px 40px 15px 40px;
 }
@@ -93,14 +155,12 @@ box-shadow: 5px 5px 26px -6px #000000;
 .social-sign-up{
 	width: 330px;
 	margin-bottom: 25px;
+	border-radius: 3px;
 	transition: 0.25s ease-in-out;
 }
 
 .social-sign-up:hover {
-box-shadow: 0px -1px 17px 4px #ABABAB;
--webkit-box-shadow: 0px -1px 17px 4px #ABABAB;
--moz-box-shadow: 0px -1px 17px 4px #ABABAB;
--o-box-shadow: 0px -1px 17px 4px #ABABAB;
+box-shadow: 0px 0px 17px #ABABAB;
 }
 
 #submit_button{

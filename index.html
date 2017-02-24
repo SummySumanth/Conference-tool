@@ -10,94 +10,176 @@
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/css/foundation-flex.css">
 	<link rel="stylesheet" type="text/css" href="css/base.css">
 	<link rel="stylesheet" type="text/css" href="css/signup.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<!-- <meta http-equiv="refresh" content="3"> -->
 
 	<img class="back-drop-img" src="imgs/clg-gate.png">
 
 	<div class="small-12 columns custom-columns" style="postion:absolute; background-color: #bcbcbc; height: 70px;width: 100px; z-index: 4; width: 100%">
-				<div class="row custom-row nav-bar">
-			<div class="small-4 columns " >
-				<a href="http://jnnce.ac.in" target="blank">
-					<img class="nav-jnnce-logo nav-item" src="imgs/jnnce-logo.png" >
-				</a>
-
-			</div>
-
-			<div class="small-4  small-centered columns" style="text-align: center;">
+		<div class="row custom-row nav-bar">
+			<a class="small-4 columns" href="http://jnnce.ac.in" target="blank">
+				<img class="nav-jnnce-logo nav-item" src="imgs/jnnce-logo.png" >
+			</a>
+			<a class="small-4  small-centered columns" href="#" style="text-align: center;">
 				<img class="nav-CMT-logo nav-item" src="imgs/nav-bar-logo2.png">
-			</div>
+			</a>
+			<a class="small-4 columns github-logo" href="https://github.com/SummySumanth/Conference-tool" target="blank">
+				<img class="nav-github-logo nav-item" src="imgs/github-logo.png">
+			</a>
+		</div>
+	</div>
 
-			<div class="small-4 columns github-logo" >
-				<a href="https://github.com/SummySumanth/Conference-tool" target="blank">
-					<img class="nav-github-logo nav-item" src="imgs/github-logo.png">
-				</a>
-				
+
+		<!-- Controllers for Dev Purpose -->
+<!-- 	<div class="small-12 columns custom-columns" style="postion:absolute; background-color: #000; height: 20px;width: 100px; z-index: 4; width: 100%">
+		<div class="row custom-row nav-bar2" style="background-color: #000;">
+			<div style="margin: 0px 30px; background-color: red" id="welcome-reveal-show">Welcome Show</div>
+			<div style="margin: 0px 30px; background-color: red" id="welcome-reveal-hide">Welcome Hide</div>
+			<div style="margin: 0px 30px; background-color: blue" id="signin-reveal-show">sign in modal Show</div>
+			<div style="margin: 0px 30px; background-color: blue" id="signin-reveal-hide">sign in modal Hide</div>
+			<div style="margin: 0px 30px; background-color: green" id="signup-reveal-show">sign up modal Show</div>
+			<div style="margin: 0px 30px; background-color: green" id="signup-reveal-hide">sign up modal Hide</div>
+		</div>
+	</div>
+ -->
+
+ 
+	<div id="welcome-container">
+		<div class="row custom-row">
+			<div class="small-1 medium-2 columns">
+			</div>
+			<div class="small-10 medium-8 small-centered columns custom-columns center-card">
+				<div class="small-12 columns card-header ">
+					<span style="width: 100%">Conference Management Tool</span>
+				</div>
+
+				<div class="row signin-form-container">
+					
+
+					<div class="small-12 columns" style="height: 1px; width: 50%; background-color: #828282; "></div>
+
+					<div class="row custom-row small-12 columns custom-columns usr-pass-signin-container">
+
+						<p style="text-align: center;">Conference management relates to the executive management of a conference either in-house within a company or for a client of a professional conference organiser (PCO). It constitutes of the basic management tools that involve planning, organising, leading and control.</p>
+					</div>	
+
+					<div class="small-12 columns" style="height: 1px; width: 50%; background-color: #828282; "></div>
+
+					<div class="small-6 columns small-centered" style="text-align: center;">
+						<div class="sign-create" id="sign-in-reveal" >
+							<span >Sign In</span>
+						</div>
+						
+					</div>
+
+
+					<div class="small-6 columns small-centered" style="text-align: center;height:30px;width: 300px;">
+						<div class="sign-create" id='sign-up-reveal'>
+							<span >Create an account</span> 
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="small-1 medium-2 columns">	
 			</div>
 		</div>
 	</div>
 
-	<div class="row custom-row">
-		<div class="small-1 medium-3 large-2 columns">
-			
-		</div>
-
-		<div class="small-10 medium-6 large-8 small-centered columns center-card custom-columns">
-			<div class="small-12 columns card-header ">
-				<span style="width: 100%">Create your account</span>
+						
+						
+	<div id="signin-container">
+		<div class="row custom-row">
+			<div class="small-1 medium-2 columns">
 			</div>
-			
-
-			<div class="row form-container">
-
-				<div class="small-12 medium-6 columns social-signup-container">
-					<a href="#"><img class="social-sign-up" src="imgs/google-sign-up.png"></a>
-					
+			<div class="small-10 medium-8 small-centered columns custom-columns center-card">
+				<div class="small-12 columns card-header ">
+					<span style="width: 100%">Sign In</span>
 				</div>
-				<div class="small-12 medium-6 columns social-signup-container">
-				<a href="#"><img class="social-sign-up" src="imgs/facebook-sign-up.png"></a>
+
+				<div class="row signin-form-container">
 					
+					<div class="small-12 medium-6 columns social-signin-container">
+						<a href="#"><img class="social-sign-up" src="imgs/google-sign-in.png"></a>
+					</div>
+					<div class="small-12 medium-6 columns social-signin-container">
+						<a href="#"><img class="social-sign-up" src="imgs/facebook-sign-in.png"></a>
+					</div>
+
+					<div class="small-12 columns" style="height: 1px; width: 50%; background-color: #828282; "></div>
+
+					<div class="row custom-row small-12 columns custom-columns usr-pass-signin-container">
+
+						<span class="small-2 columns custom-columns user-name-input" style="padding-top: 8px;">User Name</span>
+						<input class="small-3 columns custom-input-field user-name-input" type="text" id="email" placeholder="YourName@website.com">
+						<br/>
+
+						<span class="small-2 columns custom-columns user-name-input" style="padding-top: 8px;">Password</span>
+						<input class="small-3 columns custom-input-field user-name-input" type="password" id="email" placeholder="YourName@website.com">
+
+						<div class="small-2 columns">
+							<img class="user-name-input" id="sign-in-btn" src="imgs/login.png">
+						</div>
+
+						<span class="small-12 columns"> Dont have a account? <span id='sign-up-here'>Sign Up Here !</span></span>	
+					</div>	
+				</div>
+			</div>
+			<div class="small-1 medium-2 columns">	
+			</div>
+		</div>
+	</div>
+
+
+	<div id="signup-container">
+		<div class="row custom-row">
+			<div class="small-1 medium-3 large-2 columns">
+				
+			</div>
+
+			<div class="small-10 medium-6 large-8 small-centered columns custom-columns center-card">
+				<div class="small-12 columns card-header ">
+					<span style="width: 100%">Create your account</span>
 				</div>
 				
+
+				<div class="row form-container ">
+					<div class="small-12 medium-6 columns social-signup-container">
+						<a href="#"><img class="social-sign-up" src="imgs/google-sign-up.png"></a>
+					</div>
+					<div class="small-12 medium-6 columns social-signup-container">
+						<a href="#"><img class="social-sign-up" src="imgs/facebook-sign-up.png"></a>
+					</div>
 					<input class="small-6 columns" type="text" id="first_Name" placeholder="First Name" style="display: inline;">
-					<!-- <div class="small-2 columns"></div> -->
 					<input class="small-6 columns" type="text" id="second_Name" placeholder="Second Name"  style="display: inline;">
+					<input class="small-6 columns" type="text" id="email" placeholder="Email Address"><br/>
+					<input class="small-6 columns" type="text" id="phone" placeholder="Phone Number"><br/>
+					<input class="small-6 columns" type="text" id="city" placeholder="City"><br/>
+					<input class="small-6 columns" type="text" id="state" placeholder="State"><br/>
+					<span> Institution </span>
+					<input type="text" id="institution" placeholder="Jawaharlal Nehru National College of Engineering"><br/>
+					<span style="display: none;"> Country </span> 
+					<input style="display: none;" type="text" id="country" value="india"><br/>
 
+					<div class="small-2 columns">
+						<label for="right-label" class="right inline">Password</label>
+					</div>	
+					<input class="small-4 columns" type="Password" id='password' placeholder="minimum 8 characters"><br/>
 
-				<input class="small-6 columns" type="text" id="email" placeholder="Email Address"><br/>
-				<input class="small-6 columns" type="text" id="phone" placeholder="Phone Number"><br/>
-				<input class="small-6 columns" type="text" id="city" placeholder="City"><br/>
-				<input class="small-6 columns" type="text" id="state" placeholder="State"><br/>
-				<span> Institution </span> <input type="text" id="institution" placeholder="Jawaharlal Nehru National College of Engineering"><br/>
-
-				<span style="display: none;"> Country </span> <input style="display: none;" type="text" id="country" value="india"><br/>
-				<!-- <label class="small-2 columns right inline" >Password </label>  -->
-
-				<div class="small-2 columns">
-					<label for="right-label" class="right inline">Password</label>
+					<label class="small-2 columns right inline" >Retype Password </label> 
+					<input class="small-4 columns" type="Password" id="retype_password" placeholder="Retype your password" ><br/>
 				</div>
-
-				<input class="small-4 columns" type="Password" id='password' placeholder="minimum 8 characters"><br/>
-				<label class="small-2 columns right inline" >Retype Password </label> <input class="small-4 columns" type="Password" id="retype_password" placeholder="Retype your password" ><br/>
-				
-				
+				<a class="button expand" id='submit_button' href="#"> Submit </a>
 			</div>
 
-			<a class="button expand" id='submit_button' href="#"> Submit </a>
-
-			
-
-		</div>
-
-		<div class="small-1 medium-3 large-2 columns">
-			
+			<div class="small-1 medium-3 large-2 columns">
+				
+			</div>
 		</div>
 	</div>
-
-
-
 	
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script type="text/javascript" src='js/signup.js'></script>
+	<script type="text/javascript" src='js/welcome.js'></script>
 	
 </body>
 </html>
