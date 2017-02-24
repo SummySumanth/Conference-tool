@@ -1,5 +1,6 @@
 let $sinupRevealShow = $('#sign-up-reveal');
 let $signInReveal = $('#sign-in-reveal');
+let $signUpHere = $('#sign-up-here');
 
 
 
@@ -119,7 +120,7 @@ $sinupRevealShow.on('click', () =>{
 	hideWelcomeModal();
 	$welcomeContainer.on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', () =>{
 		$welcomeContainer.css('display', 'none');
-		showSignInModal();
+		showSignupModal();
 	})
 	
 });
@@ -134,6 +135,14 @@ $signInReveal.on('click', () =>{
 	});
 })
 
+$signUpHere.on('click', () =>{
+	console.log('show clicked');
+	hideSignInModal();
+	$signinContainer.on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', () =>{
+		$signinContainer.css('display', 'none');
+		showSignupModal();
+	})
+});
 
 
 
