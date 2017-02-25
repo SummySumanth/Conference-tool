@@ -1,5 +1,5 @@
 #welcome-container{
-	/*display: none;*/
+	display: none;
 }
 
 #signup-container{
@@ -130,15 +130,24 @@ box-shadow: 5px 5px 26px -6px #000000;
 
 }
 
+.back-button{
+	cursor:pointer;
+	margin-top: 11px;
+    position: absolute;
+    width: 30px;
+    margin-left: 12px;
+}
+
 .card-header{
 	text-align: center;
 	font-family: 'Roboto Condensed', sans-serif;
+	margin-top: 6px;
 	font-size:30px;
 	color:#424242;
 	height: 45px;
 	border-top-right-radius: 5px;	
 	border-top-left-radius: 5px;	
-	background-image:  url("imgs/gradient-bg.jpg");
+	/*background-image:  url("../imgs/gradient-bg.jpg");*/
 }
 
 .signin-form-container{
