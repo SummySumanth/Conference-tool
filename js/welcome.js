@@ -124,6 +124,9 @@ $signUpBackButton.on('click', () =>{
 	}, 750);
 });
 
+let registrationSuccess = () =>{
+	showSignupSuccessModal();
+}
 
 let getData = () =>{
 	FirstName = $fname.val();
@@ -162,7 +165,7 @@ let InsertToDB = () =>{
 		url:'php/registration.php',
 		data: {myData:jsonObject},
 		success: function(response) {
-			alert('Successfully added your record');
+			registrationSuccess();
         },
         error: function(response) {
         	alert('Failed to add your record added your record , check console for error');
