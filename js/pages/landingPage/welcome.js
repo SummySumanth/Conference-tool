@@ -23,6 +23,8 @@ let $pass1 = $('#password');
 let $pass2 = $('#retype_password');
 let $submit = $('#submit_button');
 
+let $backButton = $('.back-button');
+
 //Sign up sheet local variable values
 let FirstName;
 let	SecondName;
@@ -42,21 +44,21 @@ let showWelcomeModal = () =>{
 		.css('display', 'block')
 		.removeClass('animated slideOutUp')
 		.addClass('animated slideInDown');
-}
+};
 
 let showSignInModal = () =>{
 	$signinContainer
 		.css('display', 'block')
 		.removeClass('animated slideOutUp')
 		.addClass('animated slideInDown');
-}
+};
 
 let showSignupModal = () =>{
 	$signupContainer
 		.css('display', 'block')
 		.removeClass('animated slideOutUp')
 		.addClass('animated slideInDown');
-}
+};
 
 let hideWelcomeModal = () =>{
 	$welcomeContainer
@@ -68,19 +70,18 @@ let hideSignInModal = () =>{
 	$signinContainer
 		.removeClass('animated slideInDown')
 		.addClass('animated slideOutUp');
-}
+};
 
 let hideSignupModal = () =>{
 	$signupContainer
 		.removeClass('animated slideInDown')
 		.addClass('animated slideOutUp');
-}
+};
 
 
 $signInReveal.on('click', () =>{
 	hideWelcomeModal();
 	setTimeout(() =>{
-		console.log('animatione');
 		$welcomeContainer.css('display', 'none');
 		showSignInModal();
 	}, 750);
@@ -90,7 +91,6 @@ $signInBackButton.on('click', () =>{
 	console.log('back button clicked');
 	hideSignInModal();
 	setTimeout(() =>{
-		console.log('animatione');
 		$signinContainer.css('display', 'none');
 		showWelcomeModal();
 	}, 750);
@@ -99,7 +99,6 @@ $signInBackButton.on('click', () =>{
 $signUpHere.on('click', () =>{
 	hideSignInModal();
 	setTimeout(() =>{
-		console.log('animatione');
 		$signinContainer.css('display', 'none');
 		showSignupModal();
 	}, 750);
@@ -108,22 +107,22 @@ $signUpHere.on('click', () =>{
 $sinupRevealShow.on('click', () =>{
 	hideWelcomeModal();
 	setTimeout(() =>{
-		console.log('animatione');
 		$welcomeContainer.css('display', 'none');
 		showSignupModal();
 	}, 750);
 });
 
 $signUpBackButton.on('click', () =>{
-	console.log('back button clicked');
 	hideSignupModal();
 	setTimeout(() =>{
-		console.log('animatione');
 		$signupContainer.css('display', 'none');
 		showWelcomeModal();
 	}, 750);
 });
 
+let registrationSuccess = () =>{
+	showSignupSuccessModal();
+};
 
 let getData = () =>{
 	FirstName = $fname.val();
@@ -136,11 +135,11 @@ let getData = () =>{
 	Country = $country.val();
 	Password1 = $pass1.val();
 	Password2 = $pass2.val();
-}
+};
 
 let	validate = () =>{
 
-}
+};
 
 let initializeJsonObject = () =>{
 	jsonObject = {
@@ -154,7 +153,7 @@ let initializeJsonObject = () =>{
 		'country': Country,
 		'password': Password1
 	}
-}
+};
 
 let InsertToDB = () =>{
 	$.ajax({
@@ -162,21 +161,30 @@ let InsertToDB = () =>{
 		url:'php/registration.php',
 		data: {myData:jsonObject},
 		success: function(response) {
-			alert('Successfully added your record');
+			registrationSuccess();
         },
         error: function(response) {
         	alert('Failed to add your record added your record , check console for error');
-        	console.log(response)
         }	
 	});
-}
+};
+
+
+
+$backButton.on('mouseenter', () =>{
+$backButton.removeClass('animated rubberBand');
+$backButton.addClass('animated rubberBand');
+$backButton.on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', () =>{
+    $backButton.removeClass('animated rubberBand');
+})
+});
 
 let init = () =>{
 	getData();
 	validate();
 	initializeJsonObject();
 	InsertToDB();
-}
+};
 
 $submit.on('click', () =>{
 	init();

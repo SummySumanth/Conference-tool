@@ -27,7 +27,7 @@ body{
 	margin: 20px 0px 20px 60px;
 	color: #fff;
 	border-radius: 3px;
-		transition: 0.25s ease-in-out;
+	transition: 0.25s ease-in-out;
 
 }
 
@@ -57,7 +57,7 @@ body{
 .back-drop-img {
 	position: fixed;
 	z-index: 0;
-	background-image: url("../imgs/clg-gate.png");
+	background-image: url("../../imgs/clg-gate.png");
 	background-color: #cccccc;
 	background-repeat: no-repeat;	
 }
