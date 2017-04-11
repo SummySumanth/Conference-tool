@@ -44,21 +44,21 @@ let showWelcomeModal = () =>{
 		.css('display', 'block')
 		.removeClass('animated slideOutUp')
 		.addClass('animated slideInDown');
-}
+};
 
 let showSignInModal = () =>{
 	$signinContainer
 		.css('display', 'block')
 		.removeClass('animated slideOutUp')
 		.addClass('animated slideInDown');
-}
+};
 
 let showSignupModal = () =>{
 	$signupContainer
 		.css('display', 'block')
 		.removeClass('animated slideOutUp')
 		.addClass('animated slideInDown');
-}
+};
 
 let hideWelcomeModal = () =>{
 	$welcomeContainer
@@ -70,13 +70,13 @@ let hideSignInModal = () =>{
 	$signinContainer
 		.removeClass('animated slideInDown')
 		.addClass('animated slideOutUp');
-}
+};
 
 let hideSignupModal = () =>{
 	$signupContainer
 		.removeClass('animated slideInDown')
 		.addClass('animated slideOutUp');
-}
+};
 
 
 $signInReveal.on('click', () =>{
@@ -122,7 +122,7 @@ $signUpBackButton.on('click', () =>{
 
 let registrationSuccess = () =>{
 	showSignupSuccessModal();
-}
+};
 
 let getData = () =>{
 	FirstName = $fname.val();
@@ -135,11 +135,11 @@ let getData = () =>{
 	Country = $country.val();
 	Password1 = $pass1.val();
 	Password2 = $pass2.val();
-}
+};
 
 let	validate = () =>{
 
-}
+};
 
 let initializeJsonObject = () =>{
 	jsonObject = {
@@ -153,7 +153,7 @@ let initializeJsonObject = () =>{
 		'country': Country,
 		'password': Password1
 	}
-}
+};
 
 let InsertToDB = () =>{
 	$.ajax({
@@ -167,7 +167,7 @@ let InsertToDB = () =>{
         	alert('Failed to add your record added your record , check console for error');
         }	
 	});
-}
+};
 
 
 
@@ -184,7 +184,7 @@ let init = () =>{
 	validate();
 	initializeJsonObject();
 	InsertToDB();
-}
+};
 
 $submit.on('click', () =>{
 	init();
