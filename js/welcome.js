@@ -23,6 +23,8 @@ let $pass1 = $('#password');
 let $pass2 = $('#retype_password');
 let $submit = $('#submit_button');
 
+let $backButton = $('.back-button');
+
 //Sign up sheet local variable values
 let FirstName;
 let	SecondName;
@@ -80,7 +82,6 @@ let hideSignupModal = () =>{
 $signInReveal.on('click', () =>{
 	hideWelcomeModal();
 	setTimeout(() =>{
-		console.log('animatione');
 		$welcomeContainer.css('display', 'none');
 		showSignInModal();
 	}, 750);
@@ -90,7 +91,6 @@ $signInBackButton.on('click', () =>{
 	console.log('back button clicked');
 	hideSignInModal();
 	setTimeout(() =>{
-		console.log('animatione');
 		$signinContainer.css('display', 'none');
 		showWelcomeModal();
 	}, 750);
@@ -99,7 +99,6 @@ $signInBackButton.on('click', () =>{
 $signUpHere.on('click', () =>{
 	hideSignInModal();
 	setTimeout(() =>{
-		console.log('animatione');
 		$signinContainer.css('display', 'none');
 		showSignupModal();
 	}, 750);
@@ -108,17 +107,14 @@ $signUpHere.on('click', () =>{
 $sinupRevealShow.on('click', () =>{
 	hideWelcomeModal();
 	setTimeout(() =>{
-		console.log('animatione');
 		$welcomeContainer.css('display', 'none');
 		showSignupModal();
 	}, 750);
 });
 
 $signUpBackButton.on('click', () =>{
-	console.log('back button clicked');
 	hideSignupModal();
 	setTimeout(() =>{
-		console.log('animatione');
 		$signupContainer.css('display', 'none');
 		showWelcomeModal();
 	}, 750);
@@ -169,10 +165,19 @@ let InsertToDB = () =>{
         },
         error: function(response) {
         	alert('Failed to add your record added your record , check console for error');
-        	console.log(response)
         }	
 	});
 }
+
+
+
+$backButton.on('mouseenter', () =>{
+$backButton.removeClass('animated rubberBand');
+$backButton.addClass('animated rubberBand');
+$backButton.on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', () =>{
+    $backButton.removeClass('animated rubberBand');
+})
+});
 
 let init = () =>{
 	getData();

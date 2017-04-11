@@ -54,7 +54,13 @@ body{
 .user-name-input{
     margin: 15px 0px;
 }
-
+.back-drop-img {
+    position: fixed;
+    z-index: -1;
+    background-image: url("../../imgs/clg-gate.png");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+}
 
 .nav-bar{
     position: fixed;
@@ -124,48 +130,48 @@ body{
 
 }
 
-.back-button{
-    cursor:pointer;
-    margin-top: 11px;
-    position: absolute;
-    width: 30px;
-    margin-left: 12px;
+.tile-card{
+    height: 250px;
+    width:100%;
+    background-color: #ffffff;
 }
 
-.card-header{
-    text-align: center;
-    font-family: 'Roboto Condensed', sans-serif;
-    margin-top: 6px;
-    font-size:30px;
-    color:#424242;
-    height: 45px;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-    /*background-image:  url("../imgs/gradient-bg.jpg");*/
+.White{
+    background-color: #fff !important;
+    color: #474747;
 }
 
-.signin-form-container{
-    padding: 15px 20px 15px 20px;
-}
-.form-container{
-    padding: 15px 40px 15px 40px;
+.Red{
+    background-color: rgb(255, 138, 128) !important;
+    color: #474747;
 }
 
-.social-signup-container{
-    text-align: center;
+.Orange{
+    background-color: rgb(255, 209, 128) !important;
+    color: #474747;
 }
 
-.social-sign-up{
-    width: 330px;
-    margin-bottom: 25px;
-    border-radius: 3px;
-    transition: 0.25s ease-in-out;
+.Yellow{
+    background-color: rgb(255, 255, 141) !important;
+    color: #474747;
 }
 
-.social-sign-up:hover {
-    box-shadow: 0px 0px 17px #ABABAB;
+.Grey{
+    background-color: rgb(207, 216, 220) !important;
+    color: #474747;
 }
 
-#submit_button{
-    width: 100%;
+.Blue{
+    background-color: rgb(128, 216, 255) !important;
+    color: #474747;
+}
+
+.Teal{
+    background-color: rgb(167, 255, 235) !important;
+    color: #474747;
+}
+
+.Green{
+    background-color: rgb(204, 255, 144) !important;
+    color: #474747;
 }
