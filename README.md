@@ -1,11 +1,6 @@
 Conference-tool
 	
-	Currently Involved:
-		[1]Sign up page back end (including db)
-	
-	To do:
-		[1] sign up/sign in page front end design
-
-	Done-
-		[1] Sign up page backend done
+Conference management relates to the executive management of a conference either in-house within a company or for a
+client of a professional conference organiser (PCO). It constitutes of the basic management tools that involve planning,
+organising, leading and control.
 
