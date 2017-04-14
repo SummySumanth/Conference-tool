@@ -1,4 +1,4 @@
-.nav-bar{
+.nav-bar {
     position: fixed;
     z-index: 2;
     background-color: #fff;
@@ -10,23 +10,31 @@
     -o-box-shadow: 3px 5px 13px -4px #9E9E9E;
 }
 
-.nav-item{
+.nav-bar-container{
+    postion:absolute;
+    background-color: #bcbcbc;
+    height: 70px;
+    width: 100px;
+    z-index: 4;
+    width: 100%
+}
+.nav-item {
     margin-top: 25px;
 }
 
-.nav-jnnce-logo{
+.nav-jnnce-logo {
     width: 100px;
 }
 
-.nav-CMT-logo{
+.nav-CMT-logo {
     width: 320px;
 }
 
-.github-logo{
+.github-logo {
     text-align: right;
 }
 
-.nav-github-logo{
+.nav-github-logo {
 
     margin-top: 16px;
     width: 118px;
