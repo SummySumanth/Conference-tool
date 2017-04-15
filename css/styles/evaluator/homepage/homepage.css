@@ -18,15 +18,6 @@ body {
     background-color: #ffffff;
 }
 
-.back-drop-img {
-    position: fixed;
-    z-index: -10;
-    background-image: url("../../../../imgs/photos/clg-gate.png");
-    background-color: #cccccc;
-    background-repeat: no-repeat;
-}
-
-
 .back-button {
     cursor: pointer;
     margin-top: 11px;

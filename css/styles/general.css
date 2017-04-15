@@ -13,11 +13,14 @@ body {
 }
 
 .back-drop-img {
-    position: fixed;
     z-index: -10;
-    background-image: url("../../../../imgs/photos/clg-gate.png");
-    background-color: #cccccc;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 7%;
+    background-image: url('../../imgs/photos/clg-gate.png');
     background-repeat: no-repeat;
+    position: fixed;
+    background-size: 100% 100%
 }
 
 .back-button {
@@ -74,3 +77,4 @@ body {
 .cmtLogo-nav-container {
     text-align: center;
 }
+

@@ -54,14 +54,10 @@ body{
 .user-name-input{
     margin: 15px 0px;
 }
-.back-drop-img {
-    position: fixed;
-    z-index: -1;
-    background-image: url("../../imgs/clg-gate.png");
-    background-color: #cccccc;
-    background-repeat: no-repeat;
+
+.tile-card {
+    height: 250px;
+    width: 100%;
+    background-color: #ffffff;
 }
-
-
-
 
