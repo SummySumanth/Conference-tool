@@ -1,25 +1,27 @@
-#welcome-container{
+#welcome-container {
     display: none;
 }
 
-#signup-container{
+#signup-container {
     display: none;
 }
 
-#signin-container{
+#signin-container {
     display: none
 }
-#sign-up-here{
+
+#sign-up-here {
     color: #7cb1f2;
-    cursor:pointer;
+    cursor: pointer;
     font-size: 20px;
 }
-body{
+
+body {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-.sign-create{
-    cursor:pointer;
+.sign-create {
+    cursor: pointer;
     height: 30px;
     width: 300px;
     padding: 5px;
@@ -31,81 +33,103 @@ body{
 
 }
 
-.sign-create:hover{
+.sign-create:hover {
     box-shadow: 0px 0px 17px #ABABAB;
 }
-.social-signin-container{
+
+.social-signin-container {
     text-align: center;
 }
 
-.custom-row{
+.custom-row {
     margin: 0px;
     max-width: 100% !important;
 }
 
-.custom-columns{
+.custom-columns {
     padding: 0px;
 }
 
-.custom-input-field{
+.custom-input-field {
     margin: 0px 5px;
 }
 
-.user-name-input{
+.user-name-input {
     margin: 15px 0px;
 }
+
 .back-drop-img {
     position: fixed;
-    z-index: -1;
+    z-index: 0;
     background-image: url("../../imgs/clg-gate.png");
     background-color: #cccccc;
     background-repeat: no-repeat;
 }
 
-.nav-bar{
-    position: fixed;
-    z-index: 2;
-    background-color: #fff;
+.sign-up-header {
+    text-align: center;
+}
+
+.usr-pass-signin-container {
+    text-align: center;
+    padding-right: 10px !important;
+}
+
+.center-card {
+    /*position: absolute;*/
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.87);
+    margin: 60px 0px 55px 0px;
+    border-radius: 2px;
+    box-shadow: 5px 5px 26px -6px #000000;
+    -webkit-box-shadow: 5px 5px 26px -6px #000000;
+    -moz-box-shadow: 5px 5px 26px -6px #000000;
+    -o-box-shadow: 5px 5px 26px -6px #000000;
+}
+
+.back-button {
+    cursor: pointer;
+    margin-top: 11px;
+    position: absolute;
+    width: 30px;
+    margin-left: 12px;
+}
+
+.card-header {
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-top: 6px;
+    font-size: 30px;
+    color: #424242;
+    height: 45px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    /*background-image:  url("../imgs/gradient-bg.jpg");*/
+}
+
+.signin-form-container {
+    padding: 15px 20px 15px 20px;
+}
+
+.form-container {
+    padding: 15px 40px 15px 40px;
+}
+
+.social-signup-container {
+    text-align: center;
+}
+
+.social-sign-up {
+    width: 330px;
+    margin-bottom: 25px;
+    border-radius: 3px;
+    transition: 0.25s ease-in-out;
+}
+
+.social-sign-up:hover {
+    box-shadow: 0px 0px 17px #ABABAB;
+}
+
+#submit_button {
     width: 100%;
-    height: 70px;
-    box-shadow: 3px 5px 13px -4px #9E9E9E;
-    -webkit-box-shadow: 3px 5px 13px -4px #9E9E9E;
-    -moz-box-shadow: 3px 5px 13px -4px #9E9E9E;
-    -o-box-shadow: 3px 5px 13px -4px #9E9E9E;
 }
-
-.nav-bar2{
-    position: fixed;
-    z-index: 2;
-    background-color: #fff;
-    color: #fff;
-    width: 100%;
-    height: 20px;
-    box-shadow: 3px 5px 13px -4px #9E9E9E;
-    -webkit-box-shadow: 3px 5px 13px -4px #9E9E9E;
-    -moz-box-shadow: 3px 5px 13px -4px #9E9E9E;
-    -o-box-shadow: 3px 5px 13px -4px #9E9E9E;
-}
-
-.nav-item{
-    margin-top: 25px;
-}
-
-.nav-CMT-logo{
-    width: 320px;
-}
-
-.nav-jnnce-logo{
-    width: 100px;
-}
-.github-logo{
-    text-align: right;
-}
-.nav-github-logo{
-
-    margin-top: 16px;
-    width: 118px;
-}
-
-
-
