@@ -1,3 +1,36 @@
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.custom-row {
+    margin: 0px;
+    max-width: 100% !important;
+}
+
+.custom-columns {
+    padding: 0px;
+}
+
+.back-drop-img {
+    z-index: -10;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 7%;
+    background-image: url('../../imgs/photos/clg-gate.png');
+    background-repeat: no-repeat;
+    position: fixed;
+    background-size: 100% 100%
+}
+
+.back-button {
+    cursor: pointer;
+    margin-top: 11px;
+    position: absolute;
+    width: 30px;
+    margin-left: 12px;
+}
+
 .nav-bar {
     position: fixed;
     z-index: 2;
@@ -10,8 +43,8 @@
     -o-box-shadow: 3px 5px 13px -4px #9E9E9E;
 }
 
-.nav-bar-container{
-    postion:absolute;
+.nav-bar-container {
+    postion: absolute;
     background-color: #bcbcbc;
     height: 70px;
     width: 100px;
@@ -41,5 +74,7 @@
     width: 118px;
 }
 
-
+.cmtLogo-nav-container {
+    text-align: center;
+}
 

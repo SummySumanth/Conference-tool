@@ -58,14 +58,6 @@ body {
     margin: 15px 0px;
 }
 
-.back-drop-img {
-    position: fixed;
-    z-index: 0;
-    background-image: url("../../imgs/clg-gate.png");
-    background-color: #cccccc;
-    background-repeat: no-repeat;
-}
-
 .sign-up-header {
     text-align: center;
 }
