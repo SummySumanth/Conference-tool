@@ -61,7 +61,7 @@ body {
 .back-drop-img {
     position: fixed;
     z-index: 0;
-    background-image: url("../../imgs/clg-gate.png");
+    /*background-image: url("../../imgs/clg-gate.png");*/
     background-color: #cccccc;
     background-repeat: no-repeat;
 }
