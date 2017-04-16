@@ -13,7 +13,7 @@ let $signInBackButton = $('#sign-in-back');
 //Sign Up Sheet
 let $fname = $('#first_Name');
 let $sname = $('#second_Name');
-let $email = $('#email');
+let $email = $('#email-signup');
 let $pnumber = $('#phone');
 let $institution = $('#institution');
 let $city = $('#city');
@@ -121,7 +121,7 @@ $signUpBackButton.on('click', () =>{
 });
 
 let registrationSuccess = () =>{
-	showSignupSuccessModal();
+	// showSignupSuccessModal();
 };
 
 let getData = () =>{
@@ -142,6 +142,7 @@ let	validate = () =>{
 };
 
 let initializeJsonObject = () =>{
+	console.log('email address received : ' + $email.val());
 	jsonObject = {
 		'first_name': FirstName,
 		'second_name': SecondName,
