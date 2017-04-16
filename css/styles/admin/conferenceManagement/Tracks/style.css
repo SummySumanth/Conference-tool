@@ -1,0 +1,27 @@
+.first-row{
+    margin-top: 25px;
+}
+.addTrack-card{
+    text-align: center;
+    color: #474747;
+    padding-top: 15px;
+    background-color: #ffffff;
+    width: 100%;
+    height: 55px;
+    border-radius: 2px;
+    cursor: pointer;
+    box-shadow: 3px 2px 10px -4px #7f7f7f;
+    -webkit-box-shadow: 3px 2px 10px -4px #7f7f7f;
+    -moz-box-shadow: 3px 2px 10px -4px #7f7f7f;
+    -o-box-shadow: 3px 2px 10px -4px #7f7f7f;
+    transition: 0.25s ease-in-out;
+}
+
+.addTrack-card:hover{
+    width: 100%;
+    height: 55px;
+    box-shadow: 4px 6px 35px -14px #7f7f6f;
+    -webkit-box-shadow: 4px 6px 35px -14px #7f7f6f;
+    -moz-box-shadow: 4px 6px 35px -14px #7f7f6f;
+    -o-box-shadow: 4px 6px 35px -14px #7f7f6f;
+}
