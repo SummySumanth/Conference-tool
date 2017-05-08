@@ -13,7 +13,7 @@ let $signInBackButton = $('#sign-in-back');
 //Sign Up Sheet
 let $fname = $('#first_Name');
 let $sname = $('#second_Name');
-let $email = $('#email');
+let $email = $('#email-signup');
 let $pnumber = $('#phone');
 let $institution = $('#institution');
 let $city = $('#city');
