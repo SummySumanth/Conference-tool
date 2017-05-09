@@ -121,6 +121,8 @@ $signUpBackButton.on('click', () =>{
 });
 
 let registrationSuccess = () =>{
+	alert('registered successfully');
+    location.reload();
 	// showSignupSuccessModal();
 };
 
