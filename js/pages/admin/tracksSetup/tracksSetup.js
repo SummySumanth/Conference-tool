@@ -1,25 +1,27 @@
+let CurrentDate = Date();
+let DummyData = {
+    'TrackName' : 'Material Science',
+    'TrackDesc' : 'Test Text Test Text Test Text Test Text Test Text Test Text Test Text ',
+    'Timestamp' : CurrentDate
+}
+
 let InsertToDB = () =>{
-    let CurrentDate = Date();
-    console.log(CurrentDate);
-    jsonObject = {
-       'TrackName' : 'Material Science',
-        'TrackDesc' : 'Test Text Test Text Test Text Test Text Test Text Test Text Test Text ',
-        'Timestamp' : CurrentDate
-    }
-    console.log(jsonObject);
     $.ajax({
         type:'post',
         url:'../../../../PHP/adminScripts/addNewTrack.php',
-        contentType: "application/json",
-        data: {trackDetails:jsonObject},
+        data: {trackDetails:DummyData},
         success: function(response) {
-            console.log('SUMMY SUCCESS');
-            console.log('SUMMY SUCCESS');
+            console.log('ajax call successful');
+            if(response.status == 'success'){
+                console.log(response.message);
+            }else if(response.status =='error'){
+                console.log(response.message);
+            }
         },
         error: function(response) {
-            console.log('ajax error');
+            console.log('ajax call failed');
+            console.log(response);
         }
     });
 };
-
 InsertToDB();

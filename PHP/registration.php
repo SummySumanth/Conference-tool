@@ -1,5 +1,5 @@
 <?php
-
+header('Content-type: application/json');
 include('connection.php');
 
 if($_POST);
@@ -17,7 +17,17 @@ if($_POST);
 	$GKey = mysql_real_escape_string('0');
 	$FKey = mysql_real_escape_string('0');
 
-	$sql ="INSERT INTO participants(FirstName, SecondName, Email, PhoneNumber, Institution, City, State, Country, PassKey, GoogleKey, FacebookKey) VALUES(
+    $sql = "SELECT * FROM `participants` WHERE Email='$Email'";
+    $result = mysqli_query($db_conn, $sql);
+
+    if(mysqli_affected_rows($db_conn) > 0)
+    {
+        $response['status'] = "error";
+        $response['message'] = "Email address already taken, if you have forgotten your password, please reset your password";
+        echo json_encode($response);
+        exit();
+    } else{
+        $sql ="INSERT INTO participants(FirstName, SecondName, Email, PhoneNumber, Institution, City, State, Country, PassKey, GoogleKey, FacebookKey) VALUES(
 		'" . $FirstName . "' , 
 		'" . $SecondName . "' ,
 		'" . $Email . "' ,
@@ -30,11 +40,17 @@ if($_POST);
 		'" . $GKey . "' ,
 		'" . $FKey . "' 
 		)";
-	$result = mysqli_query($db_conn,$sql);
+        $result = mysqli_query($db_conn,$sql);
 
-	if (!$result) {
-		printf("Error: %s\n", mysqli_error($db_conn));
-		exit();
-	}
-}
+        if (!$result) {
+            printf("Error: %s\n", mysqli_error($db_conn));
+            exit();
+        }else{
+            $response['status'] = "success";
+            $response['message'] = "Registration Successful";
+            echo json_encode($response);
+            exit();
+        }
+    }
+    }
 ?>

@@ -1,4 +1,5 @@
 <?php
+header('Content-type: application/json');
 include('../connection.php');
 
 if($_POST) {
@@ -9,20 +10,35 @@ if($_POST) {
     $TrackAdderID = 'Admin ';                  //$_SESSION["userID"];
     $Timestamp = mysql_real_escape_string($obj['Timestamp']);
 
-//    $sql = "SELECT * FROM `Tracks` WHERE TrackName='$TrackName'";
-//    $result = mysqli_query($db_conn, $sql);
 
-    $sql = "INSERT INTO Tracks(TrackName, TrackDesc, TrackAdderID, Timestamp) VALUES(
-    '$TrackName', 
-    '$TrackDesc',
-    '$TrackAdderID',
-    '$Timestamp' 
-    )";
-    header('Content-type: application/json');
-    $response_array['status'] = 'status123';
-    echo json_encode($response_array);
+    $sql = "SELECT * FROM `Tracks` WHERE TrackName='$TrackName'";
     $result = mysqli_query($db_conn, $sql);
-    if($result){
-        echo 'track already exists';
+
+    if(mysqli_affected_rows($db_conn) > 0)
+    {
+        $response['status'] = "error";
+        $response['message'] = "The specified track already exists";
+        echo json_encode($response);
+        exit();
+    } else{
+        $sql = "INSERT INTO Tracks(TrackName, TrackDesc, TrackAdderID, Timestamp) VALUES(
+            '$TrackName',
+            '$TrackDesc',
+            '$TrackAdderID',
+            '$Timestamp'
+        )";
+        $result = mysqli_query($db_conn, $sql);
+        echo 'Added Successfully';
+
+        if (!$result) {
+            printf("Error: %s\n", mysqli_error($db_conn));
+            exit();
+        }
+        else{
+            $response['status'] = "success";
+            $response['message'] = "The specified track has been added";
+            echo json_encode($response);
+            exit();
+        }
     }
 }

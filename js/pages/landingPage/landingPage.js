@@ -164,10 +164,17 @@ let InsertToDB = () =>{
 		url:'php/registration.php',
 		data: {myData:jsonObject},
 		success: function(response) {
-			registrationSuccess();
+            console.log('ajax call successful');
+            if(response.status == 'success'){
+                alert(response.message);
+                location.reload();
+            }else if(response.status =='error'){
+                alert(response.message);
+            }
         },
         error: function(response) {
-        	alert('Failed to add your record added your record , check console for error');
+        	console.log('ajax call failed');
+        	console.loh(response);
         }	
 	});
 };

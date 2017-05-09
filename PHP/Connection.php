@@ -9,6 +9,7 @@
     if ($db_conn->connect_error) {
         die("Connection failed: " . $db_conn->connect_error);
     }
-    echo "Connection to database established successfully [file: Connection.php]\n";
-    //
+//    [note: the following line has been commented in order to recieve json data properly in ajax call, DO NOT UN-COMMENT
+//    echo "Connection to database established successfully [file: Connection.php]\n";
+
 ?>
