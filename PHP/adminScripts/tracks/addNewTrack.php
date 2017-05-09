@@ -1,6 +1,6 @@
 <?php
 header('Content-type: application/json');
-include('../connection.php');
+include('../Connection.php');
 
 if($_POST) {
     $obj = $_POST['trackDetails'];
