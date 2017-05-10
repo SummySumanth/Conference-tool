@@ -1,6 +1,6 @@
 <?php
 header('Content-type: application/json');
-include('../Connection.php');
+include('../../Connection.php');
 
 if($_POST) {
     $obj = $_POST['trackDetails'];
@@ -28,7 +28,6 @@ if($_POST) {
             '$Timestamp'
         )";
         $result = mysqli_query($db_conn, $sql);
-        echo 'Added Successfully';
 
         if (!$result) {
             printf("Error: %s\n", mysqli_error($db_conn));

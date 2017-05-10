@@ -40,3 +40,7 @@
     overflow: auto;
     margin-bottom: 0px !important;
 }
+
+.add-track-modal{
+    display: none;
+}
