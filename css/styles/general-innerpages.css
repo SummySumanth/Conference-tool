@@ -11,6 +11,7 @@ body {
 
 .custom-columns {
     padding: 0px;
+
 }
 
 .back-drop-img {
@@ -95,4 +96,15 @@ body {
 .label-icon {
     font-size: 30px;
     vertical-align: middle;
+}
+
+.modal-close-button{
+    cursor: pointer;
+    display:block;
+    position:absolute;
+    top:7px;
+    right:7px;
+    font-size: 35px;
+    color:#474747;
+    text-align: right;
 }

@@ -5,7 +5,7 @@ Licensed under the MIT license
 Copyright (c) 2016 Christian Pucci
 */
 .magictime {
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-fill-mode: both;
 }
 

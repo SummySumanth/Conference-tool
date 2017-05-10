@@ -1,6 +1,42 @@
 let CurrentDate = Date();
 
-let $submitBtn = $('#submit_button');
+let $addTrackModal = $('#add-track-modal');
+let $addTrackBtn = $('#add_new_track_btn');
+let $closeAddTrackModalBtn = $('#add-track-modal-close-btn');
+
+let $addTrackModal_submitBtn = $('#submit_button');
+
+let show_AddTrackModal = () =>{
+    $addTrackModal
+        .css('display', 'block')
+        .removeClass('magictime vanishOut')
+        .addClass('magictime vanishIn');
+}
+
+let hide_AddTrackModal = () =>{
+    $addTrackModal
+        .removeClass('magictime vanishIn')
+        .addClass('magictime vanishOut');
+    setTimeout(() =>{
+        //hiding modal and making the fields empty
+        $addTrackModal.css('display', 'none');
+        $('#modal-track-name')
+            .val("")
+            .trigger('autoresize');
+        $('#modal-track-description')
+            .val("")
+            .trigger('autoresize');
+    }, timeoutDurationOfAnimation);
+};
+
+$addTrackBtn.on('click', ()=>{
+    show_AddTrackModal();
+});
+
+$closeAddTrackModalBtn.on('click', () =>{
+    hide_AddTrackModal();
+});
+
 
 //TODO add proper validation
 let validate = (data) =>{
@@ -31,7 +67,7 @@ let showMessage = (type,message) =>{
             break;
         case 'failure': icon = 'error_outline';
                         color = '#e53935'
-                        console.log(message);
+
             break;
         case 'info': icon = 'info_outline';
                      color = '#1e88e5'
@@ -45,6 +81,20 @@ let showMessage = (type,message) =>{
 
 }
 
+let insertSuccess = (message) =>{
+    hide_AddTrackModal();
+    setTimeout(() =>{
+        toastIT(message, 1000);
+    },500);
+};
+
+let insertFailed = (message) =>{
+    // hide_AddTrackModal();
+    setTimeout(() =>{
+        toastIT(message, 3000);
+    },500);
+};
+
 let InsertToDB = (trackData) =>{
     $.ajax({
         type:'post',
@@ -52,9 +102,9 @@ let InsertToDB = (trackData) =>{
         data: {trackDetails:trackData},
         success: function(response) {
             if(response.status == 'success'){
-                showMessage('success', response.message);
+                insertSuccess(response.message);
             }else if(response.status =='error'){
-                showMessage('failure', response.message);
+                insertFailed(response.message);
             }
         },
         error: function(response) {
@@ -64,9 +114,12 @@ let InsertToDB = (trackData) =>{
     });
 };
 
-$submitBtn.on('click', () =>{
+$addTrackModal_submitBtn.on('click', () =>{
     trackDetails = getData();
     if(validate(trackDetails)){
         InsertToDB(trackDetails)
     }
 });
+
+
+

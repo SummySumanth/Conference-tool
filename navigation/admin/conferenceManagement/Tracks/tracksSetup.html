@@ -43,8 +43,56 @@
         <div class="small-2 columns custom-columns">
         </div>
 
-        <div class="small-8 column1s custom-columns addTrack-card">
+        <div class="small-8 column1s custom-columns addTrack-card" id="add_new_track_btn">
             <i class="material-icons material-icon-text">library_add</i> Add new track
+        </div>
+
+        <div class="small-2 columns custom-columns">
+        </div>
+    </div>
+
+    <!--Mock card of track info-->
+    <div class="row custom-row first-row">
+        <div class="small-2 columns custom-columns">
+        </div>
+
+        <div class="small-8 column1s custom-columns Track-card" id="add_new_track_btn">
+            <div class="row custom-row" style=" width: 100%; height: 100%;">
+                <div class="small-4 columns trackCardContent">
+                    <div class=" small-6 columns custom-columns trackCardContent">
+                        <i class="material-icons material-icon-text">shuffle</i>
+                    </div>
+                    <div class=" small-6 columns " >
+                        Track Name : Here
+                    </div>
+
+                    <!--<i class="material-icons material-icon-text">shuffle</i>-->
+                    <!---->
+                </div>
+                <div class="small-4 columns text-center trackCardContent">
+                    <div class=" small-6 columns custom-columns trackCardContent">
+                        Added By :
+                    </div>
+                    <div class=" small-6 columns chip">
+                        <img src="../../../../imgs/users/profilePictures/1.jpg" alt="Contact Person">
+                        Summy
+                    </div>
+                </div>
+                <div class="small-4 columns"> hello</div>
+
+            </div>
+
+            <!--<div style="background-color: #ff0000; width: 100%; height: 100%;">-->
+                <!--<div class="small-4 columns custom-columns trackCardContent"><i class="material-icons material-icon-text">shuffle</i> Track Name : Here</div>-->
+                <!--<div class="small-4 columns text-center custom-columns trackCardContent"> Added By :-->
+                    <!--<div class="chip">-->
+                        <!--<img src="../../../../imgs/users/profilePictures/1.jpg" alt="Contact Person">-->
+                        <!--Summy-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="small-4 columns custom-columns"> hello</div>-->
+
+            <!--</div>-->
         </div>
 
         <div class="small-2 columns custom-columns">
@@ -54,22 +102,24 @@
     <!--New track Modal-->
     <div class="custom-modal-overlay add-track-modal" id="add-track-modal">
         <div class="row custom-row" style="margin-top: 50px;">
+
             <div class=" medium-1 large-2 columns custom-columns">
             </div>
 
             <div class="small-12 medium-10 large-8 columns custom-columns small-centered add-track-pop-window">
+                <i class="material-icons modal-close-button" id="add-track-modal-close-btn">close</i>
                 <div class="small-12 column custom-columns text-center">
                     Please fill the following details of track
                 </div>
 
                 <div class="material-css-row">
                     <div class="input-field col s12">
-                        <i class="material-icons prefix">info</i>
+                        <i class="material-icons prefix material-icon-text">info</i>
                         <input id="modal-track-name" type="text" class="validate">
                         <label for="modal-track-name">Track Name</label>
                     </div>
                     <div class="input-field col s12">
-                        <i class="material-icons prefix ">description</i>
+                        <i class="material-icons prefix material-icon-text">description</i>
                         <textarea class="materialize-textarea " id="modal-track-description"></textarea>
                         <label for="modal-track-description">Track Description</label>
                     </div>
@@ -98,6 +148,7 @@
 
     <script type="text/javascript" src='../../../../js/%23library_and_frameworks/jquery/jquery-1.11.1.min.js'></script>
     <script src="../../../../css/tools/Frameworks/materialize/js/materialize.js"></script>
+    <script type="text/javascript" src='../../../../js/pages/generalScript.js'></script>
     <script type="text/javascript" src='../../../../js/pages/admin/tracksSetup/tracksSetup.js'></script>
 
 </body>
