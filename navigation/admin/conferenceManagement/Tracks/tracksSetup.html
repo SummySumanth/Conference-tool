@@ -5,57 +5,97 @@
     <title>Admin</title>
 </head>
 <body>
-    <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="../../../../css/tools/Frameworks/Foundation/foundation-flex.css">
-    <link rel="stylesheet" type="text/css" href="../../../../css/tools/animations/animate/animate.css">
 
-    <link rel="stylesheet" type="text/css" href="../../../../css/styles/%23colorsAndStyles/colors.css">
 
-    <link rel="stylesheet" type="text/css" href="../../../../css/styles/general-innerpages.css">
-    <link rel="stylesheet" type="text/css" href="../../../../css/styles/admin/conferenceManagement/Tracks/style.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/tools/Frameworks/Foundation/foundation-flex.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/tools/animations/animate/animate.css">
 
-    <!--<meta http-equiv="refresh" content="3">-->
-    <div class="small-12 columns custom-columns nav-bar-container" >
-        <div class="row custom-row nav-bar">
-            <a class="small-4 columns" href="http://jnnce.ac.in" target="blank">
-                <img class="nav-jnnce-logo nav-item" src="../../../../imgs/landingPage/jnnce-logo.png" >
-            </a>
-            <a class="small-4  small-centered columns" href="#" style="text-align: center;">
-                <img class="nav-CMT-logo nav-item" src="../../../../imgs/landingPage/nav-bar-logo2.png">
-            </a>
-            <a class="small-4 columns github-logo" href="https://github.com/SummySumanth/Conference-tool" target="blank">
-                <img class="nav-github-logo nav-item" src="../../../../imgs/landingPage/github-logo.png">
-            </a>
-        </div>
+<link rel="stylesheet" href="../../../../css/tools/Frameworks/materialize/css/materialize.css">
+
+
+<link rel="stylesheet" type="text/css" href="../../../../css/styles/%23colorsAndStyles/colors.css">
+
+<link rel="stylesheet" type="text/css" href="../../../../css/styles/general-innerpages.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/styles/admin/conferenceManagement/Tracks/style.css">
+
+<!--<meta http-equiv="refresh" content="3">-->
+<div class="small-12 columns custom-columns nav-bar-container">
+    <div class="row custom-row nav-bar">
+        <a class="small-4 columns" href="http://jnnce.ac.in" target="blank">
+            <img class="nav-jnnce-logo nav-item" src="../../../../imgs/landingPage/jnnce-logo.png">
+        </a>
+        <a class="small-4  small-centered columns" href="#" style="text-align: center;">
+            <img class="nav-CMT-logo nav-item" src="../../../../imgs/landingPage/nav-bar-logo2.png">
+        </a>
+        <a class="small-4 columns github-logo" href="https://github.com/SummySumanth/Conference-tool" target="blank">
+            <img class="nav-github-logo nav-item" src="../../../../imgs/landingPage/github-logo.png">
+        </a>
     </div>
+</div>
 
-    <!--Add New traack-->
-    <div class="row custom-row first-row">
-        <div class="small-2 columns custom-columns">
-
-        </div>
-        <div class="small-8 column1s custom-columns addTrack-card">
-            <i class="material-icons material-icon-text">library_add</i> Add new track
-        </div>
-        <div class="small-2 columns custom-columns">
-
-        </div>
-    </div>
-
-    <div class="modal-overlay">
-        <div class="row custom-row" style="margin-top: 50px;">
-            <div class=" medium-1 large-2 columns custom-columns"></div>
-            <div class="small-12 medium-10 large-8 columns custom-columns small-centered add-track-pop-window" style=" height:50px;background-color: #2ba6cb"></div>
-            <div class=" medium-1 large-2 columns custom-columns"></div>
-        </div>
+<!--Add New traack-->
+<div class="row custom-row first-row">
+    <div class="small-2 columns custom-columns">
 
     </div>
+    <div class="small-8 column1s custom-columns addTrack-card">
+        <i class="material-icons material-icon-text">library_add</i> Add new track
+    </div>
+    <div class="small-2 columns custom-columns">
+
+    </div>
+</div>
+
+<div class="custom-modal-overlay">
+    <div class="row custom-row" style="margin-top: 50px;">
+        <div class=" medium-1 large-2 columns custom-columns"></div>
+        <div class="small-12 medium-10 large-8 columns custom-columns small-centered add-track-pop-window">
+            <div class="small-12 column custom-columns text-center">
+                Please fillout the following details of track
+            </div>
+
+            <div class="material-css-row">
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">info</i>
+                    <input id="icon_prefix" type="text" class="validate">
+                    <label for="icon_prefix">Track Name</label>
+                </div>
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">description</i>
+                    <textarea class="materialize-textarea" id="icon_prefix2" ></textarea>
+                    <label for="icon_prefix2">Track Description</label>
+                </div>
+            </div>
+
+            <div class="row row-in-popwindow">
+                <div class="small-3 columns custom-columns">
+                    <div class="chip ">
+                        <img src="../../../../imgs/users/profilePictures/1.jpg" alt="Contact Person">
+                        Summy
+                    </div>
+                </div>
+                <div class="small-6 columns custom-columns">
+
+                </div>
+                <div class="small-3 columns custom-columns text-right">
+                    <button class="btn waves-effect waves-light blue darken-1" >Submit
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
     <script type="text/javascript" src='../../../../js/%23library_and_frameworks/jquery/jquery-1.11.1.min.js'></script>
+    <script src="../../../../css/tools/Frameworks/materialize/js/materialize.js"></script>
     <script type="text/javascript" src='../../../../js/pages/admin/tracksSetup/tracksSetup.js'></script>
+
 </body>
 </html>

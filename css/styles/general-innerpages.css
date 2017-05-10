@@ -82,7 +82,7 @@ body {
     vertical-align: middle;
 }
 
-.modal-overlay{
+.custom-modal-overlay{
     background-color: rgba(0,0,0,0.5);
     top: 0;
     left: 0;
@@ -90,4 +90,9 @@ body {
     height: 100%;
     position: fixed;
     z-index: 2;
+}
+
+.label-icon {
+    font-size: 30px;
+    vertical-align: middle;
 }

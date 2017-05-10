@@ -27,5 +27,16 @@
 }
 
 .add-track-pop-window{
+    /*height:50px;*/
+    background-color: #ffffff;
+    border-radius: 2px;
+    padding: 15px;
+    overflow: auto;
+}
 
+.row-in-popwindow{
+    margin-top: 15px;
+    padding: 0px 15px;
+    overflow: auto;
+    margin-bottom: 0px !important;
 }
