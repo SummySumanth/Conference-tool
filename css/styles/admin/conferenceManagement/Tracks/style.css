@@ -1,6 +1,10 @@
 .first-row{
     margin-top: 25px;
 }
+
+.card-margin{
+    margin-bottom: 10px;
+}
 .addTrack-card{
     text-align: center;
     color: #474747;
@@ -29,7 +33,7 @@
 
 .Track-card{
     color: #474747;
-    padding: 11px 15px 0px 15px;
+    padding: 11px 15px 5px 15px;
     background-color: #ffffff;
     width: 80%;
     height: 55px;
@@ -56,16 +60,21 @@
     display: inline;
 }
 
-.custom-chip{
-    display: inline-block;
-    height: 32px;
-    font-size: 13px;
-    line-height: 32px;
-    padding: 0 12px;
-    margin-bottom: 5px;
-    margin-right: 5px;
+.custom-btn{
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin: 0px 10px;
+    font-size: 27px !important;
+    font-style: bold;
 }
-
+.track-card-labels{
+    padding-top: 4px;
+}
 .add-track-pop-window{
 
     background-color: #FFF;

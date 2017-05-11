@@ -7,7 +7,7 @@ if($_POST) {
 
     $TrackName = mysql_real_escape_string($obj['TrackName']);
     $TrackDesc = mysql_real_escape_string($obj['TrackDesc']);
-    $TrackAdderID = 'Admin ';                  //$_SESSION["userID"];
+    $TrackAdderID = 'Admin';                  //$_SESSION["userID"];
     $Timestamp = mysql_real_escape_string($obj['Timestamp']);
 
 

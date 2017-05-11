@@ -6,6 +6,8 @@ let $closeAddTrackModalBtn = $('#add-track-modal-close-btn');
 
 let $addTrackModal_submitBtn = $('#submit_button');
 
+let $tracksContainer = $('#tracks_container');
+
 let show_AddTrackModal = () =>{
     $addTrackModal
         .css('display', 'block')
@@ -100,14 +102,15 @@ let InsertToDB = (trackData) =>{
         type:'post',
         url:'../../../../PHP/adminScripts/tracks/addNewTrack.php',
         data: {trackDetails:trackData},
-        success: function(response) {
+        success: (response) =>{
             if(response.status == 'success'){
                 insertSuccess(response.message);
+                getAllTracks();
             }else if(response.status =='error'){
                 insertFailed(response.message);
             }
         },
-        error: function(response) {
+        error: (response) =>{
             console.log('ajax call failed');
             console.log(response);
         }
@@ -121,5 +124,86 @@ $addTrackModal_submitBtn.on('click', () =>{
     }
 });
 
+let getSessionDetails = () =>{
+    let data = {
+        'username' : 'summy',
+        'level' : 'admin'
+    };
+    return data;
+}
 
+let constructTrack = (track) =>{
+    console.log('constructing track');
+    let trackElement = `<div class="medium large-2 columns custom-columns">
+    </div>
+
+    <div class=" medium-12 large-8 column1s custom-columns card-margin" id="tracks_container">
+        <div class=" row custom-row animated fadeInUpBig  Track-card" style=" width: 100%; height: 100%; margin: 0px !important;">
+            <div class="small-4 columns trackCardContent track-card-labels">
+                <div class=" small-6 columns custom-columns trackCardContent" style="padding-top: 4px">
+                    <i class="material-icons material-icon-text">shuffle</i>
+                </div>
+                <div class=" small-6 columns trackCardContent">
+                    ${track.TrackName}
+                </div>
+            </div>
+            <div class="small-4 columns text-center trackCardContent">
+                <div class=" small-6 columns custom-columns trackCardContent">
+                    <i class="material-icons material-icon-text">person</i> <span
+                        style="padding-left:5px; padding-right: 10px;">Added by</span>
+                </div>
+                <div class=" small-6 columns chip">
+                    <img src="../../../../imgs/users/profilePictures/1.jpg" alt="Contact Person">
+                    Summy
+                </div>
+            </div>
+            <div class="small-4 columns custom-columns trackCardContent track-card-labels text-right">
+                <i id="open-track-btn-3" data-messageid="3" class="material-icons custom-btn">open_in_new</i>
+                <i id="edit-track-btn-3" data-messageid="3" class="material-icons custom-btn">mode_edit</i>
+                <i id="delete-track-btn-3" data-messageid="3" class="material-icons custom-btn">delete</i>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="medium large-2 columns custom-columns">
+    </div>`
+    return trackElement;
+}
+let populateTracks = (data) =>{
+    let elements = "";
+     for(let key in data){
+         elements = constructTrack(data[key]) + elements;
+     }
+     console.log('constructed element:');
+    console.log(elements);
+    $tracksContainer.html("") ;
+     $tracksContainer.prepend(elements);
+
+}
+
+let getAllTracks = () =>{
+    console.log('Doing ajax call');
+    $.ajax({
+        type:'get',
+        url:'../../../../PHP/adminScripts/tracks/getAllTracks.php',
+        data: {SessionDetails:getSessionDetails()},
+        success:function(response){
+            if(response.status == 'success'){
+                console.log('Success');
+                console.log(response.DATA);
+                populateTracks(response.DATA);
+            }else if(response.status == 'error'){
+                console.log('Failed');
+                console.log(response);
+            }
+        },
+        error:function(response){
+            console.log('ajax fail');
+            console.log(response);
+        }
+    });
+};
+
+getAllTracks();
 
