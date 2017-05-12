@@ -104,3 +104,26 @@
 .add-track-modal{
     display: none;
 }
+
+.Track-Details-Modal{
+    display: none;
+}
+
+.track{
+    display: none;
+}
+.Track-name-view-modal{
+    padding: 0px 5px 5px 5px;
+    border-radius: 2px;
+    color: #242424;
+    background-color: #c2bec0;
+}
+
+.Track-desc-view-modal{
+    padding: 0px 5px 5px 5px;
+    border-radius: 2px;
+    height: 150px;
+    color: #242424;
+    background-color: #c2bec0;
+    overflow: auto ;
+}

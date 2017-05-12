@@ -82,7 +82,6 @@
                 <!--<i id="delete-track-btn-3" data-messageid="3" class="material-icons custom-btn">delete</i>-->
             <!--</div>-->
         <!--</div>-->
-
     <!--</div>-->
 
     <!--<div class="medium large-2 columns custom-columns">-->
@@ -136,6 +135,46 @@
     </div>
 </div>
 
+<!--Track Details Modal-->
+<div class="custom-modal-overlay Track-Details-Modal" id="Track-Details-modal">
+    <div class="row custom-row" style="margin-top: 50px;">
+
+        <div class=" medium-1 large-2 columns custom-columns">
+        </div>
+
+        <div class="small-12 medium-10 large-8 columns custom-columns small-centered add-track-pop-window">
+            <i class="material-icons modal-close-button" id="view-track-modal-close-btn">close</i>
+            <div class="small-12 column custom-columns text-center">
+                Track Details
+            </div>
+
+            <div class="row row-in-popwindow">
+                <div class="small-2 columns custom-columns">Track Name</div>
+                <div class="small-10 columns custom-columns Track-name-view-modal" id="view-track-modal-trackName">Metal Sound</div>
+            </div>
+            <div class="row row-in-popwindow">
+                <div class="small-2 columns custom-columns">Track Desc</div>
+                <div class="small-10 columns custom-columns Track-desc-view-modal" id="view-track-modal-trackDesc">Metal Sound</div>
+            </div>
+
+            <div class="row row-in-popwindow">
+                <div class="small-3 columns custom-columns">
+                    Created by
+                    <div class="chip ">
+                        <img src="../../../../imgs/users/profilePictures/1.jpg" id="view-track-modal-adderImage" alt="Contact Person">
+                        <span id="view-track-modal-adderName">Summy</span>
+                    </div>
+                </div>
+                <div class="small-9 columns custom-columns text-right">
+                    Timestamp :
+                    <div class=" " style="display: inline">
+                        Thu May 11 2017 16:53:45
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script type="text/javascript" src='../../../../js/%23library_and_frameworks/jquery/jquery-1.11.1.min.js'></script>
 <script src="../../../../css/tools/Frameworks/materialize/js/materialize.js"></script>

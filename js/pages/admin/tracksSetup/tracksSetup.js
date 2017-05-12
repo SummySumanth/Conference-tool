@@ -1,8 +1,15 @@
 let CurrentDate = Date();
 
 let $addTrackModal = $('#add-track-modal');
+let $viewTrackModal = $('#Track-Details-modal');
+
+
+
+
 let $addTrackBtn = $('#add_new_track_btn');
+
 let $closeAddTrackModalBtn = $('#add-track-modal-close-btn');
+let $closeViewTrackModalBtn = $('#view-track-modal-close-btn');
 
 let $addTrackModal_submitBtn = $('#submit_button');
 
@@ -14,6 +21,20 @@ let show_AddTrackModal = () =>{
         .removeClass('magictime vanishOut')
         .addClass('magictime vanishIn');
 }
+
+let show_ViewTrackModal = (trackDetails) =>{
+    $('#view-track-modal-trackName').text(trackDetails.TrackName);
+    $('#view-track-modal-trackDesc').text(trackDetails.TrackDesc);
+    $('#view-track-modal-adderName').text(trackDetails.TrackAdderID)
+    $viewTrackModal
+        .css('display', 'block')
+        .removeClass('magictime vanishOut')
+        .addClass('magictime vanishIn');
+};
+
+$addTrackBtn.on('click', ()=>{
+    show_AddTrackModal();
+});
 
 let hide_AddTrackModal = () =>{
     $addTrackModal
@@ -31,15 +52,22 @@ let hide_AddTrackModal = () =>{
     }, timeoutDurationOfAnimation);
 };
 
-$addTrackBtn.on('click', ()=>{
-    show_AddTrackModal();
-});
+let hide_ViewTrackModal = () =>{
+    $viewTrackModal
+        .removeClass('magictime vanishIn')
+        .addClass('magictime vanishOut');
+    setTimeout(() =>{
+        $viewTrackModal.css('display', 'none');
+    }, timeoutDurationOfAnimation);
+};
 
 $closeAddTrackModalBtn.on('click', () =>{
     hide_AddTrackModal();
 });
 
-
+$closeViewTrackModalBtn.on('click', () =>{
+    hide_ViewTrackModal()
+});
 //TODO add proper validation
 let validate = (data) =>{
     return true;
@@ -57,31 +85,6 @@ let getData = () =>{
     return jsondata;
 }
 
-//TODO create seprate display modals for each message
-let showMessage = (type,message) =>{
-    let color;
-    let icon;
-
-    switch (type){
-        case 'success': icon = 'done';
-                        color = '#4caf50'
-                        console.log(message);
-            break;
-        case 'failure': icon = 'error_outline';
-                        color = '#e53935'
-
-            break;
-        case 'info': icon = 'info_outline';
-                     color = '#1e88e5'
-                     console.log(message);
-            break;
-        case 'warning': icon = 'warning';
-                        color = '#ffeb3b'
-                        console.log(message);
-            break;
-    }
-
-}
 
 let insertSuccess = (message) =>{
     hide_AddTrackModal();
@@ -91,7 +94,6 @@ let insertSuccess = (message) =>{
 };
 
 let insertFailed = (message) =>{
-    // hide_AddTrackModal();
     setTimeout(() =>{
         toastIT(message, 3000);
     },500);
@@ -133,7 +135,6 @@ let getSessionDetails = () =>{
 }
 
 let constructTrack = (track) =>{
-    console.log('constructing track');
     let trackElement = `<div class="medium large-2 columns custom-columns">
     </div>
 
@@ -141,7 +142,7 @@ let constructTrack = (track) =>{
         <div class=" row custom-row animated fadeInUpBig  Track-card" style=" width: 100%; height: 100%; margin: 0px !important;">
             <div class="small-4 columns trackCardContent track-card-labels">
                 <div class=" small-6 columns custom-columns trackCardContent" style="padding-top: 4px">
-                    <i class="material-icons material-icon-text">shuffle</i>
+                    <i class="material-icons material-icon-text" style="color: #b1b1b1">shuffle</i>
                 </div>
                 <div class=" small-6 columns trackCardContent">
                     ${track.TrackName}
@@ -158,9 +159,9 @@ let constructTrack = (track) =>{
                 </div>
             </div>
             <div class="small-4 columns custom-columns trackCardContent track-card-labels text-right">
-                <i id="open-track-btn-3" data-messageid="3" class="material-icons custom-btn">open_in_new</i>
-                <i id="edit-track-btn-3" data-messageid="3" class="material-icons custom-btn">mode_edit</i>
-                <i id="delete-track-btn-3" data-messageid="3" class="material-icons custom-btn">delete</i>
+                <i id="${track.trackID}" class="material-icons custom-btn view-track-details-btn">open_in_new</i>
+                <i data-trackID="${track.trackID}" class="material-icons custom-btn">mode_edit</i>
+                <i data-trackID="${track.trackID}" class="material-icons custom-btn">delete</i>
             </div>
         </div>
 
@@ -170,28 +171,62 @@ let constructTrack = (track) =>{
     </div>`
     return trackElement;
 }
+
+let getTrackDetails = (TrackId) =>{
+    console.log('getting details, calling ajax')
+    let trackDetails = {
+        'trackID' : TrackId
+    }
+
+    $.ajax({
+        type:'post',
+        url:'../../../../PHP/adminScripts/tracks/getTrack.php',
+        data: {trackDetails:trackDetails},
+        success:function(response){
+            if(response.status == 'success'){
+                show_ViewTrackModal(response.DATA[0]);
+            }else if(response.status == 'error'){
+                console.log('Failed');
+                console.log(response);
+            }
+        },
+        error:function(response){
+            console.log('ajax fail');
+            console.log(response);
+        }
+    });
+}
+
+let ShowTrackDetails = (TrackID) =>{
+    console.log('received track Id is' + TrackID);
+    getTrackDetails(TrackID);// directly calling show modal from ajax call as I am failing to return the response
+};
+
+let assignListeners = () =>{
+    $('.view-track-details-btn').on('click', function (){
+       let TrackID = $(this).attr('id');
+       ShowTrackDetails(TrackID);
+    });
+}
+
 let populateTracks = (data) =>{
     let elements = "";
      for(let key in data){
          elements = constructTrack(data[key]) + elements;
      }
-     console.log('constructed element:');
-    console.log(elements);
     $tracksContainer.html("") ;
      $tracksContainer.prepend(elements);
+     assignListeners();
 
 }
 
 let getAllTracks = () =>{
-    console.log('Doing ajax call');
     $.ajax({
         type:'get',
         url:'../../../../PHP/adminScripts/tracks/getAllTracks.php',
         data: {SessionDetails:getSessionDetails()},
         success:function(response){
             if(response.status == 'success'){
-                console.log('Success');
-                console.log(response.DATA);
                 populateTracks(response.DATA);
             }else if(response.status == 'error'){
                 console.log('Failed');
