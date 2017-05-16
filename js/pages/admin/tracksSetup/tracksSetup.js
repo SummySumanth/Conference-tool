@@ -110,6 +110,10 @@ let InsertToDB = (trackData) =>{
                 getAllTracks();//For populating the existing tracks in the screen
             }else if(response.status =='error'){
                 insertFailed(response.message);
+                if(response.loginStatus == 'false'){
+                    alert('please log in');
+                    document.location.href= homepage;
+                }
             }
         },
         error: (response) =>{
@@ -272,3 +276,27 @@ let ShowTrackDetails = (TrackID) =>{
 //Initial Triggerings
 getAllTracks();
 
+
+//Logout
+$('#logout').on('click',()=>{
+    if(confirm("Are you sure you want to log out? any unsaved changes would be lost")){
+        $.ajax({
+            url:'../../../../PHP/sessionHandlers/logout.php',
+            success: (response) =>{
+                console.log('success block');
+                if(response.status == 'success'){
+                    console.log(response.message);
+                    document.location.href= homepage;
+                }else{
+                    if(response.status == 'error'){
+                        console.log(response.message);
+                        document.location.href= homepage;
+                    }
+                }
+            },
+            error: (response) =>{
+                console.log(response);
+            }
+        })
+    };
+});

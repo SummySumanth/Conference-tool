@@ -41,4 +41,10 @@ if(isset($_SESSION['Email'])) {
             }
         }
     }
+}else{
+    $response['status'] = "error";
+    $response['message'] = "Your account is no longer logged in, please log in again";
+    $response['loginStatus'] = 'false';
+    echo json_encode($response);
+    exit();
 }

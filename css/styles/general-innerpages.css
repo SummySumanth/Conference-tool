@@ -4,6 +4,32 @@ body {
     background-color: #f1f1f1;
 }
 
+.logout-btn{
+    position: fixed;
+    top: 90px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 20;
+    width: 90px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 3px 2px 15px -4px #9E9E9E;
+    -webkit-box-shadow: 3px 2px 15px -4px #9E9E9E;
+    -moz-box-shadow: 3px 2px 15px -4px #9E9E9E;
+    -o-box-shadow: 3px 2px 15px -4px #9E9E9E;
+    transition: 0.25s ease-in-out;
+    overflow: auto;
+
+}
+.logout-btn:hover{
+    color: #00b0ff;
+    width: 110px;
+    box-shadow: 4px 10px 75px -14px #474739;
+    /*-webkit-box-shadow: 4px 6px 35px -14px #474739;*/
+    /*-moz-box-shadow: 4px 6px 35px -14px #474739;*/
+    /*-o-box-shadow: 4px 6px 35px -14px #474739;*/
+}
 .custom-row {
     margin: 0px ;
     max-width: 100% !important;
