@@ -38,13 +38,21 @@
     width: 80%;
     height: 55px;
     border-radius: 2px;
-    cursor: pointer;
+    cursor: default;
     box-shadow: 3px 2px 10px -4px #7f7f7f;
     -webkit-box-shadow: 3px 2px 10px -4px #7f7f7f;
     -moz-box-shadow: 3px 2px 10px -4px #7f7f7f;
     -o-box-shadow: 3px 2px 10px -4px #7f7f7f;
     transition: 0.25s ease-in-out;
     overflow: auto;
+
+    -webkit-user-select: none; /* Chrome/Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+
+    /* Rules below not implemented in browsers yet */
+    -o-user-select: none;
+    user-select: none;
 }
 
 .Track-card:hover{
