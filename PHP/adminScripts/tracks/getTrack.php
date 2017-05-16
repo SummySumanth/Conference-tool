@@ -22,21 +22,17 @@ $sql_query = "SELECT * FROM `Tracks` WHERE `trackID` = '" . $TrackID . "'";
 $result = mysqli_query($db_conn, $sql_query);
 
 //echo $sql_query;
-if (mysqli_num_rows($result) > 0) {
-    $count = 0;
+if (mysqli_num_rows($result) == 1) {
     while($row = mysqli_fetch_assoc($result)) {
-        $count++;
         $myArray[] = $row;
     }
     $response["status"]="success";
     $response["message"]="Successfully retrieved row";
-    $response["row_count"]=$count;
     $response["DATA"]=$myArray;
     echo json_encode($response);
 } else {
     $response["status"]="error";
     $response["message"]="unable to retrive data";
-    $response["row_count"]=$count;
     $response["DATA"]="NO DATA";
     echo json_encode($response);
 }

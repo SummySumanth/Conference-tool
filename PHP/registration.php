@@ -27,7 +27,7 @@ if($_POST);
         echo json_encode($response);
         exit();
     } else{
-        $sql ="INSERT INTO participants(FirstName, SecondName, Email, PhoneNumber, Institution, City, State, Country, PassKey, GoogleKey, FacebookKey) VALUES(
+        $sql ="INSERT INTO Users(FirstName, SecondName, Email, PhoneNumber, Institution, City, State, Country, PassKey, GoogleKey, FacebookKey, Privilege) VALUES(
 		'" . $FirstName . "' , 
 		'" . $SecondName . "' ,
 		'" . $Email . "' ,
@@ -38,7 +38,8 @@ if($_POST);
 		'" . $Country . "' ,
 		'" . $PassKey . "' ,
 		'" . $GKey . "' ,
-		'" . $FKey . "' 
+		'" . $FKey . "',
+		'Participant'
 		)";
         $result = mysqli_query($db_conn,$sql);
 

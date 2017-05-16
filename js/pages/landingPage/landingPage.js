@@ -25,6 +25,8 @@ let $submit = $('#submit_button');
 
 let $backButton = $('.back-button');
 
+let $signInBtn = $('#sign-in-btn');
+
 //Sign up sheet local variable values
 let FirstName;
 let	SecondName;
@@ -78,7 +80,6 @@ let hideSignupModal = () =>{
 		.addClass('animated slideOutUp');
 };
 
-
 $signInReveal.on('click', () =>{
 	hideWelcomeModal();
 	setTimeout(() =>{
@@ -120,10 +121,11 @@ $signUpBackButton.on('click', () =>{
 	}, 750);
 });
 
-let registrationSuccess = () =>{
-	alert('registered successfully');
-    location.reload();
-	// showSignupSuccessModal();
+let registrationSuccess = (message) =>{
+	alert(message);
+	setTimeout(function (){
+        location.reload();
+	},4000);
 };
 
 let getData = () =>{
@@ -166,10 +168,10 @@ let InsertToDB = () =>{
 		success: function(response) {
             console.log('ajax call successful');
             if(response.status == 'success'){
-                alert(response.message);
+				registrationSuccess(response.message);
                 location.reload();
             }else if(response.status =='error'){
-                alert(response.message);
+                toastIT(response.message, 5000);
             }
         },
         error: function(response) {
@@ -178,8 +180,6 @@ let InsertToDB = () =>{
         }	
 	});
 };
-
-
 
 $backButton.on('mouseenter', () =>{
 $backButton.removeClass('animated rubberBand');
@@ -200,11 +200,60 @@ $submit.on('click', () =>{
 	init();
 });
 
+// ###################### SIGN IN PROCESS ######################
+
+let redirect = (destination) =>{
+    console.log('redirect function reached');
+    console.log(destination);
+    switch (destination){
+        case 'Admin':
+            console.log('case reached');
+            window.location = "navigation/admin/admin_homepage.html";
+            break;
+        case 'Participant':
+            break;
+        case 'Evaluator':
+            break;
+    }
+}
+
+let login = (userEmail,password) =>{
+  let loginDetails = {
+      'userEmail' : userEmail,
+      'userPassword' : password
+  }
+
+  $.ajax({
+        type: 'post',
+        url: 'php/sessionHandlers/login.php',
+        data: {loginDetails: loginDetails},
+        success: function(response) {
+           if(response.status == 'success'){
+                console.log('login success');
+                console.log(response);
+                redirect(response.Privilage);
+           }else if(response.status =='error'){
+               toastIT(response.message, 5000);
+           }
+        },
+        error: function(response) {
+           console.log('ajax call failed');
+           console.log(response);
+        }
+  });
+};
+
+$signInBtn.on('click', () =>{
+	let userEmail = $('#sign_in_user_email').val();
+    let password = $('#sign_in_user_password').val();
+    login(userEmail,password);
+});
+
+// ##################################################################
 $( document ).ready(function() {
 	setTimeout(() =>{
 		showWelcomeModal();
 	},500)
-    
 });
 
 
