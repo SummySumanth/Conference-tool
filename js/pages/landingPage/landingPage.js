@@ -203,14 +203,13 @@ $submit.on('click', () =>{
 // ###################### SIGN IN PROCESS ######################
 
 let redirect = (destination) =>{
-    console.log('redirect function reached');
-    console.log(destination);
     switch (destination){
         case 'Admin':
             console.log('case reached');
             window.location = "navigation/admin/admin_homepage.html";
             break;
         case 'Participant':
+            window.location = "navigation/author/author_homepage.html";
             break;
         case 'Evaluator':
             break;
