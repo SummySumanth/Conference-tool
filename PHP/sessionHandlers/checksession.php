@@ -21,6 +21,7 @@ if(isset($_SESSION['Email'])){
     $response['status']='success';
     $response['loggedIn']=true;
     $response['data']=$_SESSION['Email'];
+    $response['Privilege']=$_SESSION['Privilege'];
     echo json_encode($response);
 }else{
     $response['status']='success';
