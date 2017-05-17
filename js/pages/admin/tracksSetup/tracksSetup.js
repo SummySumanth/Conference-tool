@@ -1,3 +1,4 @@
+let requiredPrivilage = ['Admin','Evaluator'];
 let CurrentDate = Date();
 
 //Dom Elements Caching
@@ -259,6 +260,7 @@ let getTrackDetails = (TrackId) =>{
             }else if(response.status == 'error'){
                 console.log('Failed');
                 console.log(response);
+
             }
         },
         error:function(response){
@@ -306,8 +308,12 @@ let checkSession = () =>{
         type: 'get',
         url: '../../../../PHP/sessionHandlers/checksession.php',
         success: (response) =>{
+            // console.log(requiredPrivilage.indexOf(response.Privilege));
             if(!response.loggedIn){
                 alert('Please login to continue');
+                document.location.href= homepage;
+            } else if(requiredPrivilage.indexOf(response.Privilege) == -1){
+                alert('You are not authorized to view this page, please log in');
                 document.location.href= homepage;
             }
         },

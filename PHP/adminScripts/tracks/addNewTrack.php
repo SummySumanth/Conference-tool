@@ -3,7 +3,7 @@ header('Content-type: application/json');
 include('../../Connection.php');
 
 session_start();
-if(isset($_SESSION['Email'])) {
+if(isset($_SESSION['Email']) && (($_SESSION['Privilege'] == 'Admin') || ($_SESSION['Privilege'] == 'Evaluator')))  {
     if ($_POST) {
         $obj = $_POST['trackDetails'];
 
