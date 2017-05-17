@@ -69,6 +69,12 @@ body {
     padding-right: 10px !important;
 }
 
+.form-location{
+ width: 350px;
+}
+.input-margin{
+    margin-bottom: 10px !important;
+}
 .center-card {
     /*position: absolute;*/
     z-index: 1;

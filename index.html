@@ -144,33 +144,74 @@
 
 
             <div class="row form-container ">
-                <div class="small-12 medium-6 columns social-signup-container">
-                    <a href="#"><img class="social-sign-up" src="imgs/landingPage/google-sign-up.png"></a>
-                </div>
-                <div class="small-12 medium-6 columns social-signup-container">
-                    <a href="#"><img class="social-sign-up" src="imgs/landingPage/facebook-sign-up.png"></a>
-                </div>
-                <input class="small-6 columns" type="text" id="first_Name" placeholder="First Name"
-                       style="display: inline;">
-                <input class="small-6 columns" type="text" id="second_Name" placeholder="Second Name"
-                       style="display: inline;">
-                <input class="small-6 columns" type="text" id="email-signup" placeholder="Email Address"><br/>
-                <input class="small-6 columns" type="text" id="phone" placeholder="Phone Number"><br/>
-                <input class="small-6 columns" type="text" id="city" placeholder="City"><br/>
-                <input class="small-6 columns" type="text" id="state" placeholder="State"><br/>
-                <span> Institution </span>
-                <input type="text" id="institution" placeholder="Jawaharlal Nehru National College of Engineering"><br/>
-                <span style="display: none;"> Country </span>
-                <input style="display: none;" type="text" id="country"><br/>
+                <!--<div class="small-12 medium-6 columns social-signup-container">-->
+                    <!--<a href="#"><img class="social-sign-up" src="imgs/landingPage/google-sign-up.png"></a>-->
+                <!--</div>-->
+                <!--<div class="small-12 medium-6 columns social-signup-container">-->
+                    <!--<a href="#"><img class="social-sign-up" src="imgs/landingPage/facebook-sign-up.png"></a>-->
+                <!--</div>-->
 
-                <div class="small-2 columns">
-                    <label class="right inline">Password</label>
-                </div>
-                <input class="small-4 columns" type="Password" id='password' placeholder="minimum 8 characters"><br/>
+                <div class="material-css-row " style=" background-color: #ffffff; padding: 10px; border-radius: 10px; border: solid 3px rgba(0, 0, 0, 0.16);">
+                    <div class="material-css-row" style="margin-bottom: 0px">
+                        <div class="input-field col s6" style="width: 350px;">
+                            <input id="first_Name" type="text" class="input-margin">
+                            <label for="first_Name">First Name</label>
+                        </div>
+                        <div class="input-field col s6" style="width: 350px;">
+                            <input id="second_Name" type="text" class=" input-margin">
+                            <label for="second_Name">Last Name</label>
+                        </div>
+                    </div>
 
-                <label class="small-2 columns right inline">Retype Password </label>
-                <input class="small-4 columns" type="Password" id="retype_password"
-                       placeholder="Retype your password"><br/>
+                    <div class="material-css-row" style="margin-bottom: 0px">
+                        <div class="input-field col s6" style="width: 350px;">
+                            <i class="material-icons prefix">email</i>
+                            <input type="text" id="email-signup" class=" input-margin">
+                            <label for="email-signup">Email</label>
+                        </div>
+                        <div class="input-field col s6" style="width: 350px;">
+                            <i class="material-icons prefix">phone</i>
+                            <input type="text" id="phone" class=" input-margin">
+                            <label for="phone">Phone</label>
+                        </div>
+                    </div>
+                    <div class="material-css-row " style="margin-bottom: 0px">
+                        <div class="input-field col s4 form-location" >
+                            <i class="material-icons prefix">location_city</i>
+                            <input type="text" id="city" class=" input-margin">
+                            <label for="city">City</label>
+                        </div>
+                        <div class="input-field col s4 form-location" >
+                            <i class="material-icons prefix">location_on</i>
+                            <input type="text" id="state" class=" input-margin">
+                            <label for="state">State</label>
+                        </div>
+                        <div class="input-field col s4 form-location" >
+                            <i class="material-icons prefix">landscape</i>
+                            <input type="text" id="country" class=" input-margin">
+                            <label for="country">Country</label>
+                        </div>
+                    </div>
+                    <div class="material-css-row " style="margin-bottom: 0px">
+                        <div class="input-field col s12 " >
+                            <i class="material-icons prefix">school</i>
+                            <input type="text" id="institution" class=" input-margin">
+                            <label for="institution">Institution</label>
+                        </div>
+                    </div>
+                    <div class="material-css-row" style="margin-bottom: 0px">
+                        <div class="input-field col s6" style="width: 350px;">
+                            <i class="material-icons prefix">vpn_key</i>
+                            <input type="password" id="password" class=" input-margin">
+                            <label for="password">Password</label>
+                        </div>
+                        <div class="input-field col s6" style="width: 350px;">
+                            <i class="material-icons prefix">vpn_key</i>
+                            <input type="text" id="retype_password" class=" input-margin">
+                            <label for="retype_password">Re Type password</label>
+                        </div>
+                    </div>
+                </div>
             </div>
             <a class="button expand" id='submit_button' href="#"> Submit </a>
         </div>
