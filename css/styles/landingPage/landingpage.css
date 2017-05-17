@@ -21,12 +21,14 @@ body {
 }
 
 .sign-create {
+    text-align: center;
+    display: inline-block;
     cursor: pointer;
     height: 30px;
     width: 300px;
     padding: 5px;
     background-color: #5eb1ff;
-    margin: 20px 0px 20px 60px;
+    margin: 10px;
     color: #fff;
     border-radius: 3px;
     transition: 0.25s ease-in-out;
