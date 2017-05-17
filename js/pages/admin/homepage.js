@@ -24,3 +24,23 @@ $('#logout').on('click',()=>{
         })
     };
 });
+
+let checkSession = () =>{
+    $.ajax({
+        type: 'get',
+        url: '../../PHP/sessionHandlers/checksession.php',
+        success: (response) =>{
+            if(!response.loggedIn){
+                alert('Please login to continue');
+                document.location.href= homepage;
+            }
+        },
+        error: (response) =>{
+            console.log(response);
+        }
+    });
+};
+
+setInterval(() =>{
+    checkSession();
+}, 2000);
