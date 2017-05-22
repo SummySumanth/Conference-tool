@@ -16,3 +16,5 @@ echo "   ";
 echo $_SESSION['FirstName'];
 echo "   ";
 echo  $_SESSION['Privilege'];
+echo "   ";
+echo  $_SESSION['PUID'];

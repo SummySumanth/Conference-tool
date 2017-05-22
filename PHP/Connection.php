@@ -3,6 +3,7 @@
     $username = "sumanth";
     $password = "password";
 
+    global $db_conn;
     // Create connection
     $db_conn = new mysqli($servername, $username, $password,"CMT");
     // Check connection

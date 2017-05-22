@@ -30,9 +30,8 @@ $('#logout').on('click',()=>{
 let checkSession = () =>{
     $.ajax({
         type: 'get',
-        url: '../../../../PHP/sessionHandlers/checksession.php',
+        url: '../../PHP/sessionHandlers/checksession.php',
         success: (response) =>{
-            // console.log(requiredPrivilage.indexOf(response.Privilege));
             if(!response.loggedIn){
                 alert('Please login to continue');
                 document.location.href= homepage;
