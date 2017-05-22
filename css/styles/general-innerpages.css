@@ -1,7 +1,16 @@
 
 body {
     font-family: 'Roboto Condensed', sans-serif;
-    background-color: #f1f1f1;
+    width: 100% !important;
+    height: 100% !important;
+    background: url('../../imgs/photos/clg-gate.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+
+
 }
 
 .logout-btn{
