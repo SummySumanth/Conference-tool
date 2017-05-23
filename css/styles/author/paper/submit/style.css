@@ -10,17 +10,26 @@
 }
 
 .container-header {
+    cursor: default;
+    user-select: none;
+    -ms-user-select:none ;
+    -webkit-user-select: none;
+    -moz-user-select: none;
     margin-bottom: 20px;
     color: #ffffff;
     width: auto;
-    background-color: #78daff;
     font-size: 30px;
     padding: 5px 0px;
-
     box-shadow: 0px -1px 8px 0px #242424;
     -webkit-box-shadow: 0px -1px 8px 0px #242424;
     -moz-box-shadow: 0px -1px 8px 0px #242424;
     -o-box-shadow: 0px -1px 8px 0px #242424;
+
+    background: url('../../../../../imgs/misc/gradient-bg.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .field-header{

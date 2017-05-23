@@ -1,6 +1,13 @@
 
 body {
     font-family: 'Roboto Condensed', sans-serif;
+    width: 100% !important;
+    height: 100% !important;
+    background: url('../../imgs/photos/clg-gate.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .custom-row {
@@ -78,3 +85,13 @@ body {
     text-align: center;
 }
 
+.do-animation{
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition:         transform .8s ease-in-out;
+}
+
+.do-animation-trigger:hover .do-animation{
+    color: #00b0ff;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}

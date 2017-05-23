@@ -27,3 +27,105 @@ body {
 }
 
 
+.evaluate-card{
+    text-align: center;
+    color: #474747;
+    padding: 20px;
+    background-color: #ffffff;
+    width: 100%;
+    border-radius: 2px;
+    cursor: default;
+    box-shadow: 3px 2px 10px -4px #151515;
+    -webkit-box-shadow: 3px 2px 10px -4px #151515;
+    -moz-box-shadow: 3px 2px 10px -4px #151515;
+    -o-box-shadow: 3px 2px 10px -4px #151515;
+    transition: 0.25s ease-in-out;
+    overflow: auto;
+}
+
+.evaluate-card:hover{
+    box-shadow: 4px 6px 35px -14px #151515;
+    -webkit-box-shadow: 4px 6px 35px -14px #151515;
+    -moz-box-shadow: 4px 6px 35px -14px #151515;
+    -o-box-shadow: 4px 6px 35px -14px #151515;
+}
+
+.field-header{
+    font-weight: bold;
+    font-size: 17px;
+    margin: 7px 0px;
+    padding: 10px;
+}
+.field-content{
+    font-size: 17px;
+    margin: 7px 0px;
+    background-color: #e3e3e3;
+    padding: 10px;
+    border-radius: 2px
+}
+
+.description-field{
+    height: 100px;
+    overflow: auto;
+    width: 100%;
+    background-color: #efefef;
+}
+
+.download-btn{
+    cursor: pointer;
+    margin: 7px 0px;
+    padding: 7px 10px;
+    background-color: #e3e3e3;
+    border-radius: 30px;
+    transition: 0.25s ease-in-out;
+}
+.download-btn:hover{
+    box-shadow: 0px 4px 6px -3px #474739;
+    -webkit-box-shadow: 0px 4px 6px -3px #474739;
+    -moz-box-shadow: 0px 4px 6px -3px #474739;
+    -o-box-shadow: 0px 4px 6px -3px #474739;
+}
+.background-white{
+    background-color: #ffffff !important;
+}
+
+.hover-red-trigger:hover .hover-red{
+    color: #c62828 !important;
+}
+.hover-white-trigger:hover .hover-white{
+    color: #ffffff !important;
+}
+
+.action-tab{
+    background-color: #c62828;
+    color: #ffffff;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 10px 0px;
+
+}
+
+.action-btns{
+    cursor: pointer;
+    padding: 4px 0px;
+    background-color: #9b2b2b ;
+    border-radius: 5px;
+    margin: 0px 5px;
+    transition: 0.5s ease-in-out;
+}
+.action-btns:hover{
+    background-color: #ffffff;
+    color: #c62828 !important;
+    -webkit-box-shadow: 0px 4px 27px -7px rgba(0,0,0,0.58);
+    -moz-box-shadow: 0px 4px 27px -7px rgba(0,0,0,0.58);
+    box-shadow: 0px 4px 27px -7px rgba(0,0,0,0.58);
+}
+
+#btnControl {
+    display: none;
+}
+
+#btnControl:checked + label > img {
+    width: 70px;
+    height: 74px;
+}
