@@ -21,6 +21,7 @@ $('.show-btn').on('click', function () {
         };
 
         let showFullCard = () =>{
+            console.log($hintCard.next());
             $hintCard.next().removeClass('animated fadeOut').addClass('animated fadeIn');
             $hintCard.next().css("display", "flex");
         }
@@ -29,7 +30,6 @@ $('.show-btn').on('click', function () {
 
         setTimeout(function ($hintCard) {
             hideHintCard();
-            $hintCard.css("display", "none");
             showFullCard();
         }, 750);
     }
@@ -39,7 +39,7 @@ $('.show-btn').on('click', function () {
 $('#logout').on('click',()=>{
     if(confirm("Are you sure you want to log out? any unsaved changes would be lost")){
         $.ajax({
-            url:'../../PHP/sessionHandlers/logout.php',
+            url:'../../../PHP/sessionHandlers/logout.php',
             success: (response) =>{
                 console.log('success block');
                 if(response.status == 'success'){
@@ -79,5 +79,5 @@ let checkSession = () =>{
 };
 
 setInterval(() =>{
-    // checkSession();
+    checkSession();
 }, 2000);
