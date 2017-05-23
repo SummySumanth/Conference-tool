@@ -6,6 +6,35 @@ let requiredPrivilage = ['participant'];
 
 
 
+
+
+
+
+$('.show-btn').on('click', function () {
+    {
+        let $hintCard = $(this).parent();
+
+        console.log($hintCard.next());
+
+        let hideHintCard = () =>{
+            $hintCard.css("display", "none");
+        };
+
+        let showFullCard = () =>{
+            $hintCard.next().removeClass('animated fadeOut').addClass('animated fadeIn');
+            $hintCard.next().css("display", "flex");
+        }
+
+        $hintCard.removeClass('animated fadeIn').addClass('animated fadeOut');
+
+        setTimeout(function ($hintCard) {
+            hideHintCard();
+            $hintCard.css("display", "none");
+            showFullCard();
+        }, 750);
+    }
+});
+
 //Logout
 $('#logout').on('click',()=>{
     if(confirm("Are you sure you want to log out? any unsaved changes would be lost")){
