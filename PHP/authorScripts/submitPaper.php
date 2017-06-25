@@ -23,13 +23,15 @@ function registerPaper($paperDetails, $location, $db_connection)
     $Title = $paperDetails['Title'];
     $Description = $paperDetails['Description'];
     $CoPresenters = $paperDetails['CoPresenters'];
-    $sql = "INSERT INTO `Papers` (PUID, trackID, Title, Description, Co_presenters, FileLocation) VALUES (
+    $timestamp = $paperDetails['Timestamp'];
+    $sql = "INSERT INTO `Papers` (PUID, trackID, Title, Description, Co_presenters, FileLocation, TimeOfSubmit) VALUES (
     '$PUID',
     '$TrackID',
     '$Title',
     '$Description',
     '$CoPresenters',
-    '$location'
+    '$location',
+    '$timestamp'
     );";
 
     $result = mysqli_query($db_connection, $sql);

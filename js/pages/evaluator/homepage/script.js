@@ -2,7 +2,7 @@
  * Created by Sumanth on 4/14/2017.
  */
 
-let requiredPrivilage = ['participant'];
+let requiredPrivilage = ['Evaluator'];
 
 
 
@@ -10,36 +10,12 @@ let requiredPrivilage = ['participant'];
 
 
 
-$('.show-btn').on('click', function () {
-    {
-        let $hintCard = $(this).parent();
-
-        console.log($hintCard.next());
-
-        let hideHintCard = () =>{
-            $hintCard.css("display", "none");
-        };
-
-        let showFullCard = () =>{
-            console.log($hintCard.next());
-            $hintCard.next().removeClass('animated fadeOut').addClass('animated fadeIn');
-            $hintCard.next().css("display", "flex");
-        }
-
-        $hintCard.removeClass('animated fadeIn').addClass('animated fadeOut');
-
-        setTimeout(function ($hintCard) {
-            hideHintCard();
-            showFullCard();
-        }, 750);
-    }
-});
 
 //Logout
 $('#logout').on('click',()=>{
     if(confirm("Are you sure you want to log out? any unsaved changes would be lost")){
         $.ajax({
-            url:'../../../PHP/sessionHandlers/logout.php',
+            url:'../../PHP/sessionHandlers/logout.php',
             success: (response) =>{
                 console.log('success block');
                 if(response.status == 'success'){
@@ -61,7 +37,7 @@ $('#logout').on('click',()=>{
 let checkSession = () =>{
     $.ajax({
         type: 'get',
-        url: '../../../PHP/sessionHandlers/checksession.php',
+        url: '../../PHP/sessionHandlers/checksession.php',
         success: (response) =>{
             // console.log(requiredPrivilage.indexOf(response.Privilege));
             if(!response.loggedIn){
@@ -80,4 +56,4 @@ let checkSession = () =>{
 
 setInterval(() =>{
     checkSession();
-}, 2000);
+}, 500);

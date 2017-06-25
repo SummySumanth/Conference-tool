@@ -48,11 +48,13 @@ let getFormValues = () =>{
   let $Description = $('#paper-description').val();
   let $Track = $('#track-select option:selected').val();
   let $CoPresenters = $('#paper-co-presenters').val();
+  let $timestamp = Date();
   let paperData = {
       'Title' : $Title,
       'Description' : $Description,
       'Track' : $Track,
-      'CoPresenters' : $CoPresenters
+      'CoPresenters' : $CoPresenters,
+      'Timestamp' : $timestamp
   };
   return paperData;
 };
