@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fde80ae0-e179-4380-8c15-64bdbd6dd14e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PHP/evaluator/evaluate.php" afterPath="$PROJECT_DIR$/PHP/evaluator/evaluate.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PHP/generalScripts/getPaperStatus.php" afterPath="$PROJECT_DIR$/PHP/generalScripts/getPaperStatus.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/pages/evaluator/evaluate/script.js" afterPath="$PROJECT_DIR$/js/pages/evaluator/evaluate/script.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,16 +38,16 @@
       <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/pages/evaluator/evaluate/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+            <state relative-caret-position="340">
+              <caret line="302" column="27" lean-forward="true" selection-start-line="302" selection-start-column="27" selection-end-line="302" selection-end-column="27" />
               <folding>
                 <element signature="e#153#622#0" expanded="false" />
-                <marker date="1498470339938" expanded="true" signature="3261:3415" ph="..." />
-                <marker date="1498470339938" expanded="false" signature="3317:3354" ph="..." />
-                <marker date="1498470339938" expanded="true" signature="3563:3720" ph="..." />
-                <marker date="1498470339938" expanded="false" signature="3619:3656" ph="..." />
-                <marker date="1498470339938" expanded="true" signature="3872:4023" ph="..." />
-                <marker date="1498470339938" expanded="false" signature="3928:3965" ph="..." />
+                <marker date="1498471415870" expanded="true" signature="3311:3465" ph="..." />
+                <marker date="1498471415870" expanded="false" signature="3367:3404" ph="..." />
+                <marker date="1498471415870" expanded="true" signature="3613:3770" ph="..." />
+                <marker date="1498471415870" expanded="false" signature="3669:3706" ph="..." />
+                <marker date="1498471415870" expanded="true" signature="3922:4073" ph="..." />
+                <marker date="1498471415870" expanded="false" signature="3978:4015" ph="..." />
               </folding>
             </state>
           </provider>
@@ -58,7 +56,7 @@
       <file leaf-file-name="getPaperStatus.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PHP/generalScripts/getPaperStatus.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
+            <state relative-caret-position="527">
               <caret line="31" column="38" lean-forward="false" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
               <folding>
                 <element signature="e#6#90#0#PHP" expanded="true" />
@@ -791,7 +789,7 @@
       <workItem from="1498284276851" duration="968000" />
       <workItem from="1498314859901" duration="25299000" />
       <workItem from="1498453306877" duration="12741000" />
-      <workItem from="1498470763904" duration="8000" />
+      <workItem from="1498470763904" duration="663000" />
     </task>
     <task id="LOCAL-00001" summary="[1] track cards getting creator name from database and populating&#10;[2] Create session php ready, Login Ready&#10;&#10;todo&#10;&#10;[1] Logout">
       <created>1494925427773</created>
@@ -926,11 +924,18 @@
       <option name="project" value="LOCAL" />
       <updated>1498468263628</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="status of paper check">
+      <created>1498470815720</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1498470815720</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="181345000" />
+    <option name="totallyTimeSpent" value="182000000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -943,9 +948,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25113463" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25113463" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32766616" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -991,7 +996,8 @@
     <MESSAGE value="evaluator evaluation card contents dynamic retrival" />
     <MESSAGE value="session check on each php file and evaluator evaluate php progressing" />
     <MESSAGE value="db backup" />
-    <option name="LAST_COMMIT_MESSAGE" value="db backup" />
+    <MESSAGE value="status of paper check" />
+    <option name="LAST_COMMIT_MESSAGE" value="status of paper check" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1376,7 +1382,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PHP/generalScripts/getPaperStatus.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
+        <state relative-caret-position="527">
           <caret line="31" column="38" lean-forward="false" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
           <folding>
             <element signature="e#6#90#0#PHP" expanded="true" />
@@ -1387,16 +1393,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/pages/evaluator/evaluate/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+        <state relative-caret-position="340">
+          <caret line="302" column="27" lean-forward="true" selection-start-line="302" selection-start-column="27" selection-end-line="302" selection-end-column="27" />
           <folding>
             <element signature="e#153#622#0" expanded="false" />
-            <marker date="1498470339938" expanded="true" signature="3261:3415" ph="..." />
-            <marker date="1498470339938" expanded="false" signature="3317:3354" ph="..." />
-            <marker date="1498470339938" expanded="true" signature="3563:3720" ph="..." />
-            <marker date="1498470339938" expanded="false" signature="3619:3656" ph="..." />
-            <marker date="1498470339938" expanded="true" signature="3872:4023" ph="..." />
-            <marker date="1498470339938" expanded="false" signature="3928:3965" ph="..." />
+            <marker date="1498471415870" expanded="true" signature="3311:3465" ph="..." />
+            <marker date="1498471415870" expanded="false" signature="3367:3404" ph="..." />
+            <marker date="1498471415870" expanded="true" signature="3613:3770" ph="..." />
+            <marker date="1498471415870" expanded="false" signature="3669:3706" ph="..." />
+            <marker date="1498471415870" expanded="true" signature="3922:4073" ph="..." />
+            <marker date="1498471415870" expanded="false" signature="3978:4015" ph="..." />
           </folding>
         </state>
       </provider>

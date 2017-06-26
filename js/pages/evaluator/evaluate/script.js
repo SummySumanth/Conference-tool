@@ -26,8 +26,8 @@ let getPapers = () => {
 };
 
 let getPaperStatus = (paper) => {
-    let status;
-
+    let status_response;
+    let status
     let paperDetails = {
         'PaperID' : paper.PaperID
     }
@@ -37,9 +37,17 @@ let getPaperStatus = (paper) => {
         data: {paperDetails: paperDetails},
         type: 'post',
         success: function(response){
-            status = response.DATA;
-            if(status != null){
-                console.log(status);
+            status_response = response.DATA;
+            // console.log(response);
+            if(status_response != null){
+                switch(status_response.Status){
+                    case 'Approved': status = 'Approved'
+                        break;
+                    case 'Rejected': status = 'Rejected'
+                        break;
+                }
+            }else{
+                status = 'Under Review';
             }
 
         },
@@ -47,16 +55,7 @@ let getPaperStatus = (paper) => {
             console.log(response);
         }
     });
-    // console.log(status);
-    switch(status){
-        case 'Approved': return 'Approved'
-            break;
-        case 'Rejected': return 'Rejected'
-            break;
-        case null: return 'Under Review'
-            break;
-    }
-
+    return status;
 };
 
 let getTrackName = (TrackId) => {
@@ -118,12 +117,10 @@ let getUserName = (userID) => {
 };
 
 let constructPaper = (paper) => {
-    // console.log('construct paper called');
     let status = getPaperStatus(paper);
     let status_element;
     let track = getTrackName(paper.trackID);
     let author = getUserName(paper.PUID);
-    // console.log(status);
 
     switch (status) {
         case 'Approved':
@@ -141,7 +138,6 @@ let constructPaper = (paper) => {
                     <i class="material-icons" style="vertical-align: middle; color:#7dc8f0">sentiment_neutral</i> Under Review
                 </div>`;
     }
-    // console.log(status_element);
     let element = `<div class="small-2 column">
 
     </div>
