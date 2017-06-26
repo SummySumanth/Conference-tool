@@ -23,6 +23,7 @@ if(isset($_SESSION['Email']) && (($_SESSION['Privilege'] == 'Admin') || ($_SESSI
         $result = mysqli_query($db_conn, $sql);
         if (mysqli_affected_rows($db_conn) > 0) {
             $sql = "UPDATE `approvals` SET approverID='$evaluator',Status='$Status',timestamp='$timestamp' WHERE PaperID='$paperID'";
+
         } else {
 
         }
