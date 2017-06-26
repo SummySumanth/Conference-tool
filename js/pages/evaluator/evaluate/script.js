@@ -252,11 +252,10 @@ let evaluate = (paperID, paperStatus) =>{
         data: {evaluator: evlauator},
         success: function (response) {
             if (response.status == 'success') {
-                Materialize.toast('Paper Approved!', 4000);
-                console.log(response);
+                Materialize.toast(response.message, 5000);
                 init();
             } else if (response.status == 'error') {
-                Materialize.toast('fail!', 4000);
+                Materialize.toast('fail!', 5000);
                 console.log('Failed');
                 console.log(response);
             }
