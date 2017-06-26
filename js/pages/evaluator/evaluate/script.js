@@ -11,7 +11,6 @@ let getPapers = () => {
         async: false,
         url: '../../../PHP/adminScripts/tracks/getAllPapers.php',
         success: (response) => {
-            console.log('success block');
             if (response.status == 'success') {
                 papers = response.DATA;
             } else if (response.status == 'error') {
@@ -28,22 +27,31 @@ let getPapers = () => {
 let getPaperStatus = (paper) => {
     let status;
 
+    let paperDetails = {
+        'PaperID' : paper.PaperID
+    }
     $.ajax({
         async: false,
         url:'../../../PHP/generalScripts/getPaperStatus.php',
-        data: paper,
+        data: {paperDetails: paperDetails},
         type: 'post',
         success: function(response){
-            if(response.status == 'success'){
-                console.log(response);
-            }else if(response.status == 'error'){
-                console.log(response);
-            }
+            status = response.DATA;
         },
         error:function (response) {
             console.log(response);
         }
     });
+
+    switch(status){
+        case 'Approved': return 'Approved'
+            break;
+        case 'Rejected': return 'Rejected'
+            break;
+        case null: return 'Under Review'
+            break;
+    }
+
 };
 
 let getTrackName = (TrackId) => {
@@ -76,23 +84,87 @@ let getTrackName = (TrackId) => {
     return trackName;
 };
 
+// let getUserName = (userID) => {
+//     let userName;
+//
+//     let userDetails = {
+//         'trackID': userID
+//     };
+//
+//     $.ajax({
+//         async: false,
+//         type: 'post',
+//         url: '../../../PHP/adminScripts/tracks/getUser.php',
+//         data: {userDetails: userDetails},
+//         success: function (response) {
+//             if (response.status == 'success') {
+//                 userName = response.DATA[0].FirstName;
+//             } else if (response.status == 'error') {
+//                 console.log('Failed');
+//                 console.log(response);
+//             }
+//         },
+//         error: function (response) {
+//             console.log('ajax fail');
+//             console.log(response);
+//         }
+//     });
+//
+//     return userName;
+// };
+
+let getUserName = (userID) => {
+    let userName;
+
+    let userDetails = {
+        'userID': userID
+    };
+
+    console.log('in getusername');
+        $.ajax({
+        async: false,
+        type: 'post',
+        url: '../../../PHP/adminScripts/tracks/getUser.php',
+        data: {userDetails: userDetails},
+        success: function (response) {
+            if (response.status == 'success') {
+                userName = response.DATA[0].FirstName;
+            } else if (response.status == 'error') {
+                console.log('Failed');
+                console.log(response);
+            }
+        },
+        error: function (response) {
+            console.log('ajax fail');
+            console.log(response);
+        }
+    });
+
+    return userName;
+
+}
 let constructPaper = (paper) => {
-    let status;
-
+    let status = getPaperStatus(paper);
+    let status_element;
     let track = getTrackName(paper.trackID);
-    let paper_card;
+    let author = getUserName(paper.PUID);
 
-    switch (getPaperStatus(paper)) {
-        case 'accepted':
-            status = ``;
+    switch (status) {
+        case 'Approved':
+            status_element = `<div class="small-6 medium-3 columns text-left field-header-row-card" >
+                    <i class="material-icons" style="vertical-align: middle; color:#43b736">sentiment_very_satisfied</i> Approved
+                </div>`;
             break;
-        case 'rejected' :
-            status = ``;
+        case 'Rejected' :
+            status_element = `<div class="small-6 medium-3 columns text-left field-header-row-card" >
+                    <i class="material-icons" style="vertical-align: middle; color:#F0431D">sentiment_very_dissatisfied</i> Rejected
+                </div>`;
             break;
-        case 'under-review' :
-            status = ``;
+        case 'Under Review' :
+            status_element = `<div class="small-6 medium-3 columns text-left field-header-row-card" >
+                    <i class="material-icons" style="vertical-align: middle; color:#7dc8f0">sentiment_neutral</i> Under Review
+                </div>`;
     }
-    console.log(paper);
     let element = `<div class="small-2 column">
 
     </div>
@@ -105,9 +177,7 @@ let constructPaper = (paper) => {
                 <div class="small-6 medium-3 columns text-left field-header-row-card" >
                     ${track}
                 </div>
-                <div class="small-6 medium-3 columns text-left field-header-row-card" >
-                    <i class="material-icons" style="vertical-align: middle; color:#7dc8f0">sentiment_neutral</i> Under Review
-                </div>
+                ${status_element}
                 <span class="small-12 medium-3 columns text-center do-animation-trigger hover-red-trigger custom-btn1 show-btn" >
                     <i class="material-icons do-animation hover-red" style="vertical-align: middle">
                         visibility
@@ -149,7 +219,7 @@ let constructPaper = (paper) => {
                     Author
                 </div>
                 <div class="small-12 medium-10 columns  text-left field-content">
-                         ${paper.PUID}
+                         ${author}
                 </div>
                 <div class="small-12 medium-2 columns text-left field-header">
                     Co-Authors
@@ -161,7 +231,7 @@ let constructPaper = (paper) => {
                     Paper
                 </div>
                 <div class="small-12 medium-10 columns text-left field-content background-white" >
-                    <a href="${'../../../' + paper.FileLocation}">
+                    <a href="${'../../../' + paper.FileLocation}" download>
                     <span class="do-animation-trigger hover-red-trigger custom-btn1" >
                         <i class="material-icons do-animation hover-red" style="vertical-align: middle">
                             file_download
@@ -222,7 +292,6 @@ let assignListeners = () =>{
             $hintCard.css("display", "none");
         };
         let showFullCard = () => {
-            console.log($hintCard.next());
             $hintCard.prev().removeClass('animated fadeOut').addClass('animated fadeIn');
             $hintCard.prev().css("display", "flex");
         }
@@ -237,7 +306,6 @@ let assignListeners = () =>{
 
 let populatePaperCards = (papers) => {
     let paperCard = "";
-    console.log(papers);
     for (let key in papers) {
         paperCard = constructPaper(papers[key]) + paperCard;
     }
@@ -293,7 +361,6 @@ setInterval(() => {
 }, 500);
 
 let init = () => {
-    console.log(getPapers());
     populatePaperCards(getPapers());
 };
 
