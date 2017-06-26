@@ -23,9 +23,37 @@ if(isset($_SESSION['Email']) && (($_SESSION['Privilege'] == 'Admin') || ($_SESSI
         $result = mysqli_query($db_conn, $sql);
         if (mysqli_affected_rows($db_conn) > 0) {
             $sql = "UPDATE `approvals` SET approverID='$evaluator',Status='$Status',timestamp='$timestamp' WHERE PaperID='$paperID'";
-
+            $result = mysqli_query($db_conn, $sql);
+            if($result){
+                $response['status'] = "success";
+                $response['message'] = "Paper status has been updated with status '$Status'";
+                echo json_encode($response);
+                exit();
+            } else{
+                $response['status'] = "error";
+                $response['message'] = mysqli_error($db_conn);
+                echo json_encode($response);
+                exit();
+            }
         } else {
-
+            $sql = "INSERT INTO approvals(PaperID, approverID, Status, timestamp) VALUES(
+            '$paperID',
+            '$evaluator',
+            '$Status',
+            '$timestamp'
+            )";
+            $result = mysqli_query($db_conn, $sql);
+            if($result){
+                $response['status'] = "success";
+                $response['message'] ="Paper status has been '$Status'";
+                echo json_encode($response);
+                exit();
+            } else{
+                $response['status'] = "error";
+                $response['message'] = mysqli_error($db_conn);
+                echo json_encode($response);
+                exit();
+            }
         }
 
 

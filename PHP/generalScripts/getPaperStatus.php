@@ -28,7 +28,8 @@ if(isset($_SESSION['Email']) && $_SESSION['Privilege'] == 'Admin' || $_SESSION['
         }
         $response["status"]="success";
         $response["message"]="Successfully retrieved row";
-        $response["DATA"]=$myArray;
+        $response["DATA"]=$myArray[0];
+        $response["Query"]=$sql_query;
         echo json_encode($response);
     }else{
         $response['status'] = "error";

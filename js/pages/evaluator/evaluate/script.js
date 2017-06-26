@@ -38,12 +38,16 @@ let getPaperStatus = (paper) => {
         type: 'post',
         success: function(response){
             status = response.DATA;
+            if(status != null){
+                console.log(status);
+            }
+
         },
         error:function (response) {
             console.log(response);
         }
     });
-
+    // console.log(status);
     switch(status){
         case 'Approved': return 'Approved'
             break;
@@ -114,10 +118,12 @@ let getUserName = (userID) => {
 };
 
 let constructPaper = (paper) => {
+    // console.log('construct paper called');
     let status = getPaperStatus(paper);
     let status_element;
     let track = getTrackName(paper.trackID);
     let author = getUserName(paper.PUID);
+    // console.log(status);
 
     switch (status) {
         case 'Approved':
@@ -135,6 +141,7 @@ let constructPaper = (paper) => {
                     <i class="material-icons" style="vertical-align: middle; color:#7dc8f0">sentiment_neutral</i> Under Review
                 </div>`;
     }
+    // console.log(status_element);
     let element = `<div class="small-2 column">
 
     </div>
