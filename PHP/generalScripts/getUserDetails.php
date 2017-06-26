@@ -6,28 +6,40 @@
  * Time: 12:09 PM
  */
 
-header('Content-type: application/json');
-include('../Connection.php');
 
-if($_POST) {
-    $obj = $_POST['userEmailAddress'];
-    $emailID = mysql_real_escape_string($obj['email']);
-    $sql_query = "SELECT * FROM `Users` WHERE `Email` = '" . $emailID . "'";
 
-    $result = mysqli_query($db_conn, $sql_query);
+session_start();
 
-    if (mysqli_num_rows($result) == 1) {
-        while ($row = mysqli_fetch_assoc($result)) {
-            $myArray[] = $row;
+if(isset($_SESSION['Email']) &&  $_SESSION['Privilege'] == 'Admin' ||  $_SESSION['Privilege'] == 'Evaluator' ||  $_SESSION['Privilege'] == 'Participant'){
+    header('Content-type: application/json');
+    include('../Connection.php');
+
+    if($_POST) {
+        $obj = $_POST['userEmailAddress'];
+        $emailID = mysql_real_escape_string($obj['email']);
+        $sql_query = "SELECT * FROM `Users` WHERE `Email` = '" . $emailID . "'";
+
+        $result = mysqli_query($db_conn, $sql_query);
+
+        if (mysqli_num_rows($result) == 1) {
+            while ($row = mysqli_fetch_assoc($result)) {
+                $myArray[] = $row;
+            }
+            $response["status"] = "success";
+            $response["message"] = "Successfully retrieved row";
+            $response["DATA"] = $myArray[0];
+            echo json_encode($response);
+        } else {
+            $response["status"] = "error";
+            $response["message"] = "unable to retrive data";
+            $response["DATA"] = "NO DATA";
+            echo json_encode($response);
         }
-        $response["status"] = "success";
-        $response["message"] = "Successfully retrieved row";
-        $response["DATA"] = $myArray[0];
-        echo json_encode($response);
-    } else {
-        $response["status"] = "error";
-        $response["message"] = "unable to retrive data";
-        $response["DATA"] = "NO DATA";
-        echo json_encode($response);
     }
+}else{
+    $response['status'] = "error";
+    $response['message'] = "Your account is no longer logged in, please log in again";
+    $response['loginStatus'] = 'false';
+    echo json_encode($response);
+    exit();
 }

@@ -5,6 +5,7 @@
 let requiredPrivilage = ['Evaluator'];
 
 let $paperContainer = $('#papersContainer');
+
 let getPapers = () => {
     let papers;
     $.ajax({
@@ -84,35 +85,6 @@ let getTrackName = (TrackId) => {
     return trackName;
 };
 
-// let getUserName = (userID) => {
-//     let userName;
-//
-//     let userDetails = {
-//         'trackID': userID
-//     };
-//
-//     $.ajax({
-//         async: false,
-//         type: 'post',
-//         url: '../../../PHP/adminScripts/tracks/getUser.php',
-//         data: {userDetails: userDetails},
-//         success: function (response) {
-//             if (response.status == 'success') {
-//                 userName = response.DATA[0].FirstName;
-//             } else if (response.status == 'error') {
-//                 console.log('Failed');
-//                 console.log(response);
-//             }
-//         },
-//         error: function (response) {
-//             console.log('ajax fail');
-//             console.log(response);
-//         }
-//     });
-//
-//     return userName;
-// };
-
 let getUserName = (userID) => {
     let userName;
 
@@ -120,8 +92,7 @@ let getUserName = (userID) => {
         'userID': userID
     };
 
-    console.log('in getusername');
-        $.ajax({
+    $.ajax({
         async: false,
         type: 'post',
         url: '../../../PHP/adminScripts/tracks/getUser.php',
@@ -139,10 +110,9 @@ let getUserName = (userID) => {
             console.log(response);
         }
     });
-
     return userName;
+};
 
-}
 let constructPaper = (paper) => {
     let status = getPaperStatus(paper);
     let status_element;
@@ -168,7 +138,7 @@ let constructPaper = (paper) => {
     let element = `<div class="small-2 column">
 
     </div>
-    <div class="small-8 column small-centered">
+    <div class="small-8 column small-centered" data-paperID="${paper.PaperID}">
         <div class="small-12 columns  text-center animated fadeInUpBig evaluate-card" style="margin: 7px 0px 20px 0px;">
             <div class="row 1234" style="padding: 0px 20px;" >
                 <div class="small-12 medium-3 columns text-left field-header-row-card" style="font-weight: bold">
@@ -249,7 +219,7 @@ let constructPaper = (paper) => {
                         </span>
                         <span class="small-12 medium-1 columns "></span>
 
-                        <span class="small-12 medium-4 columns do-animation-trigger hover-red-trigger action-btns reject-btn" data-paperID="${paper.PaperID}" >
+                        <span class="small-12 medium-4 columns do-animation-trigger hover-red-trigger action-btns reject-btn" data-paperid="${paper.PaperID}" >
                             <i class="material-icons do-animation hover-red" style="vertical-align: middle; padding: 0px 5px;">cancel</i>
                             Reject
                         </span>
@@ -264,6 +234,35 @@ let constructPaper = (paper) => {
     </div>`
 
     return element;
+};
+
+let evaluate = (paperID, paperStatus) =>{
+    let evlauator = {
+        'paperID': paperID,
+        'paperStatus': paperStatus,
+        'timestamp': Date()
+    }
+
+    $.ajax({
+        type: 'post',
+        url: '../../../PHP/evaluator/evaluate.php',
+        data: {evaluator: evlauator},
+        success: function (response) {
+            if (response.status == 'success') {
+                Materialize.toast('Paper Approved!', 4000);
+                console.log(response);
+                init();
+            } else if (response.status == 'error') {
+                Materialize.toast('fail!', 4000);
+                console.log('Failed');
+                console.log(response);
+            }
+        },
+        error: function (response) {
+            console.log('ajax fail');
+            console.log(response);
+        }
+    });
 };
 
 let assignListeners = () =>{
@@ -300,6 +299,16 @@ let assignListeners = () =>{
             hideHintCard();
             showFullCard();
         }, 500);
+    });
+
+    $('.approve-btn').on('click', function(){
+        paperID = $(this).data('paperid');
+        evaluate(paperID, 'Approved');
+    });
+
+    $('.reject-btn').on('click', function(){
+        paperID = $(this).data('paperid');
+        evaluate(paperID, 'Rejected');
     });
 
 };
