@@ -24,7 +24,7 @@ let getPapers = () => {
     });
     return papers;
 };
-
+//TODO: paper resubmission
 let getPaperStatus = (paper) => {
     let status_response;
     let status
