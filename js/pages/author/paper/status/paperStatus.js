@@ -38,17 +38,15 @@ let getPaperStatus = (paper) => {
         type: 'post',
         success: function(response){
             status_response = response.DATA;
-            // console.log(response);
-            if(status_response != null){
+
                 switch(status_response.Status){
                     case 'Approved': status = 'Approved'
                         break;
                     case 'Rejected': status = 'Rejected'
                         break;
+                    case 'Under Review': status = 'Under Review'
+                        break;
                 }
-            }else{
-                status = 'Under Review';
-            }
 
         },
         error:function (response) {
@@ -121,7 +119,7 @@ let constructPaper = (paper) => {
     let status_element;
     let track = getTrackName(paper.trackID);
     let author = getUserName(paper.PUID);
-
+    console.log(status);
     switch (status) {
         case 'Approved':
             status_element = `<div class="small-6 medium-3 columns text-left field-header-row-card" >
@@ -218,12 +216,12 @@ let constructPaper = (paper) => {
 
                         <span class="small-12 medium-5 columns do-animation-trigger hover-red-trigger action-btns">
                              <div class="small-12 medium-10 columns" >
-                                <input id="file" class="pure-button pure-button-active" type="file" style="color: #fff; margin: 0px !important; ">
+                                <input id="file" class="pure-button pure-button-active file" type="file" style="color: #fff; margin: 0px !important; ">
                              </div>
                         </span>
                         <span class="small-12 medium-1 columns "></span>
 
-                        <span class="small-12 medium-3 columns do-animation-trigger hover-red-trigger action-btns" >
+                        <span class="small-12 medium-3 columns do-animation-trigger hover-red-trigger action-btns resubmit" data-paperid="${paper.PaperID}" >
                          <i class="material-icons do-animation hover-red" style="vertical-align: middle; padding: 0px 5px;">autorenew</i>
                             Resubmit
                         </span>
@@ -239,6 +237,36 @@ let constructPaper = (paper) => {
 
     return element;
 };
+
+let submitPaper = (paperData, file) =>{
+
+    var form_data = new FormData();
+    form_data.append('json', JSON.stringify(paperData));
+    form_data.append('file', file);
+
+
+
+    $.ajax({
+        url: '../../../../PHP/authorScripts/resubmitPaper.php',
+        cache: false,
+        contentType: false,
+        processData: false,
+        data: form_data,
+        type: 'post',
+        success: function(response){
+            if(response.status == 'success'){
+                alert(response.message);
+                location.reload();
+            }else if(response.status == 'error'){
+                console.log(response);
+            }
+        },
+        error:function (response) {
+            console.log(response);
+        }
+    });
+};
+
 
 let assignListeners = () =>{
 
@@ -276,6 +304,17 @@ let assignListeners = () =>{
         }, 500);
     });
 
+    $('.resubmit').on('click', function(){
+        let file = $('.file').prop('files')[0];
+        let paperID= $(this).data('paperid');
+        console.log(paperID);
+        let paperData = {
+            'paperID' : paperID,
+            'timestamp': Date()
+        };
+        submitPaper(paperData,file);
+    });
+
 };
 
 let populatePaperCards = (papers) => {
@@ -289,40 +328,6 @@ let populatePaperCards = (papers) => {
 };
 
 
-
-$('.show-btn').on('click', function () {
-    let $hintCard = $(this).parent();
-
-    let hideHintCard = () => {
-        $hintCard.css("display", "none");
-    };
-    let showFullCard = () => {
-        $hintCard.next().removeClass('animated fadeOut').addClass('animated fadeIn');
-        $hintCard.next().css("display", "flex");
-    }
-    $hintCard.removeClass('animated fadeIn').addClass('animated fadeOut');
-    setTimeout(function ($hintCard) {
-        hideHintCard();
-        showFullCard();
-
-    }, 500);
-});
-
-$('.hide-btn').on('click', function () {
-    let $hintCard = $(this).parent().parent();
-    let hideHintCard = () => {
-        $hintCard.css("display", "none");
-    };
-    let showFullCard = () => {
-        $hintCard.prev().removeClass('animated fadeOut').addClass('animated fadeIn');
-        $hintCard.prev().css("display", "flex");
-    }
-    $hintCard.removeClass('animated fadeIn').addClass('animated fadeOut');
-    setTimeout(function ($hintCard) {
-        hideHintCard();
-        showFullCard();
-    }, 500);
-});
 
 
 

@@ -39,15 +39,13 @@ let getPaperStatus = (paper) => {
         success: function(response){
             status_response = response.DATA;
             // console.log(response);
-            if(status_response != null){
-                switch(status_response.Status){
-                    case 'Approved': status = 'Approved'
-                        break;
-                    case 'Rejected': status = 'Rejected'
-                        break;
-                }
-            }else{
-                status = 'Under Review';
+            switch(status_response.Status){
+                case 'Approved': status = 'Approved'
+                    break;
+                case 'Rejected': status = 'Rejected'
+                    break;
+                case 'Under Review': status = 'Under Review'
+                    break;
             }
 
         },
