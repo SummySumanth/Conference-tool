@@ -27,7 +27,7 @@ let getPapers = () => {
 //TODO: paper resubmission
 let getPaperStatus = (paper) => {
     let status_response;
-    let status
+    let status;
     let paperDetails = {
         'PaperID' : paper.PaperID
     }
@@ -38,7 +38,7 @@ let getPaperStatus = (paper) => {
         type: 'post',
         success: function(response){
             status_response = response.DATA;
-
+                console.log(status_response)
                 switch(status_response.Status){
                     case 'Approved': status = 'Approved'
                         break;
@@ -119,7 +119,7 @@ let constructPaper = (paper) => {
     let status_element;
     let track = getTrackName(paper.trackID);
     let author = getUserName(paper.PUID);
-    console.log(status);
+    // console.log(status);
     switch (status) {
         case 'Approved':
             status_element = `<div class="small-6 medium-3 columns text-left field-header-row-card" >

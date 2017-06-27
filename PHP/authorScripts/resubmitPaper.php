@@ -27,7 +27,7 @@ if(isset($_SESSION['Email']) && $_SESSION['Privilege'] == 'Participant'){
         $sql = "UPDATE `Papers` SET FileLocation='$locationAddress',TimeOfSubmit='$timestamp' WHERE PaperID='$paperID'";
         $result = mysqli_query($db_connection, $sql);
 
-        $sql2 = "UPDATE `approvals` SET Status='Status' ,timestamp='$timestamp' WHERE PaperID='$paperID'";
+        $sql2 = "UPDATE `approvals` SET Status='Under Review' ,timestamp='$timestamp' WHERE PaperID='$paperID'";
         $result2 = mysqli_query($db_connection, $sql2);
         if (!$result) {
             $response['status'] = "error";
