@@ -43,4 +43,4 @@ let checkSession = () =>{
 
 setInterval(() =>{
     checkSession();
-}, 2000);
+}, 500);

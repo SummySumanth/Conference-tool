@@ -5,14 +5,13 @@
  * Date: 5/11/2017
  * Time: 12:03 PM
  */
-
 session_start();
 
-if(isset($_SESSION['Email']) && $_SESSION['Privilege'] == 'Admin' ||  $_SESSION['Privilege'] == 'Evaluator' || $_SESSION['Privilege'] == 'Participant'){
+if(isset($_SESSION['Email']) &&  $_SESSION['Privilege'] == 'Admin' ||  $_SESSION['Privilege'] == 'Evaluator'){
     header('Content-type: application/json');
     include('../../Connection.php');
 
-    $sql_query = 'SELECT * FROM `tracks`';
+    $sql_query = 'SELECT * FROM `Papers`';
     $result = mysqli_query($db_conn, $sql_query);
 
     if (mysqli_num_rows($result) > 0) {

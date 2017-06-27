@@ -2,11 +2,10 @@
  * Created by Sumanth on 5/18/2017.
  */
 
-let requiredPrivilage = ['participant'];
+let requiredPrivilage = ['Participant'];
 
 let $submitBtn = $('#submit-btn');
 let $tracksSelect = $('#track-select');
-
 
 //### To load available tracks in select field
 let constructTrack = (track) => {
@@ -49,11 +48,13 @@ let getFormValues = () =>{
   let $Description = $('#paper-description').val();
   let $Track = $('#track-select option:selected').val();
   let $CoPresenters = $('#paper-co-presenters').val();
+  let $timestamp = Date();
   let paperData = {
       'Title' : $Title,
       'Description' : $Description,
       'Track' : $Track,
-      'CoPresenters' : $CoPresenters
+      'CoPresenters' : $CoPresenters,
+      'Timestamp' : $timestamp
   };
   return paperData;
 };
@@ -103,7 +104,7 @@ let callAjax = (paperData, file) =>{
                 alert(response.message);
                 document.location.href= '/works/Conference-tool/navigation/author/author_homepage.html';
             }else if(response.status == 'error'){
-
+                console.log(response);
             }
         },
         error:function (response) {
@@ -129,39 +130,6 @@ let submitPaper = () =>{
 $submitBtn.on('click', () => submitPaper());
 
 loadTracks();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 //Logout
 $('#logout').on('click',()=>{
@@ -207,5 +175,5 @@ let checkSession = () =>{
 };
 
 setInterval(() =>{
-    // checkSession();
+    checkSession();
 }, 2000);

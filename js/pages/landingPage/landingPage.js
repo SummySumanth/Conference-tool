@@ -212,6 +212,7 @@ let redirect = (destination) =>{
             window.location = "navigation/author/author_homepage.html";
             break;
         case 'Evaluator':
+            window.location = "navigation/evaluator/evaluator_homepage.html";
             break;
     }
 }

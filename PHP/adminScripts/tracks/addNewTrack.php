@@ -1,17 +1,15 @@
 <?php
-header('Content-type: application/json');
-include('../../Connection.php');
-
 session_start();
-if(isset($_SESSION['Email']) && (($_SESSION['Privilege'] == 'Admin') || ($_SESSION['Privilege'] == 'Evaluator')))  {
+
+if(isset($_SESSION['Email']) && $_SESSION['Privilege'] == 'Admin'){
+    header('Content-type: application/json');
+    include('../../Connection.php');
     if ($_POST) {
         $obj = $_POST['trackDetails'];
-
         $TrackName = mysql_real_escape_string($obj['TrackName']);
         $TrackDesc = mysql_real_escape_string($obj['TrackDesc']);
         $TrackAdderID = $_SESSION['Email'];
         $Timestamp = mysql_real_escape_string($obj['Timestamp']);
-
 
         $sql = "SELECT * FROM `Tracks` WHERE TrackName='$TrackName'";
         $result = mysqli_query($db_conn, $sql);

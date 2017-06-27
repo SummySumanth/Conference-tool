@@ -6,34 +6,40 @@
  * Time: 12:09 PM
  */
 
+session_start();
 
+if(isset($_SESSION['Email']) && $_SESSION['Privilege'] == 'Evaluator' || $_SESSION['Privilege'] == 'Admin' || $_SESSION['Privilege'] == 'Participant'){
+    header('Content-type: application/json');
+    include('../../Connection.php');
 
-header('Content-type: application/json');
-include('../../Connection.php');
+    if($_POST) {
+        $obj = $_POST['trackDetails'];
 
-if($_POST) {
-    $obj = $_POST['trackDetails'];
+        $TrackID = mysql_real_escape_string($obj['trackID']);
 
-    $TrackID = mysql_real_escape_string($obj['trackID']);
-
-}
-$sql_query = "SELECT * FROM `Tracks` WHERE `trackID` = '" . $TrackID . "'";
-
-$result = mysqli_query($db_conn, $sql_query);
-
-//echo $sql_query;
-if (mysqli_num_rows($result) == 1) {
-    while($row = mysqli_fetch_assoc($result)) {
-        $myArray[] = $row;
     }
-    $response["status"]="success";
-    $response["message"]="Successfully retrieved row";
-    $response["DATA"]=$myArray;
-    echo json_encode($response);
-} else {
-    $response["status"]="error";
-    $response["message"]="unable to retrive data";
-    $response["DATA"]="NO DATA";
-    echo json_encode($response);
-}
+    $sql_query = "SELECT * FROM `Tracks` WHERE `trackID` = '" . $TrackID . "'";
 
+    $result = mysqli_query($db_conn, $sql_query);
+
+    if (mysqli_num_rows($result) == 1) {
+        while($row = mysqli_fetch_assoc($result)) {
+            $myArray[] = $row;
+        }
+        $response["status"]="success";
+        $response["message"]="Successfully retrieved row";
+        $response["DATA"]=$myArray;
+        echo json_encode($response);
+    } else {
+        $response["status"]="error";
+        $response["message"]="unable to retrive data";
+        $response["DATA"]="NO DATA";
+        echo json_encode($response);
+    }
+}else{
+    $response['status'] = "error";
+    $response['message'] = "Your account is no longer logged in, please log in again";
+    $response['loginStatus'] = 'false';
+    echo json_encode($response);
+    exit();
+}
