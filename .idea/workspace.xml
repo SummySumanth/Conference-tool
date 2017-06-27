@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fde80ae0-e179-4380-8c15-64bdbd6dd14e" name="Default" comment="">
+    <list default="true" id="57db3dc0-4cf5-4b75-9371-65788ca4c00b" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Conference-tool.iml" afterPath="$PROJECT_DIR$/.idea/Conference-tool.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PHP/adminScripts/tracks/getUser.php" afterPath="$PROJECT_DIR$/PHP/adminScripts/tracks/getUser.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/pages/author/paper/status/paperStatus.js" afterPath="$PROJECT_DIR$/js/pages/author/paper/status/paperStatus.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/navigation/author/paper/status/paperStatus.html" afterPath="$PROJECT_DIR$/navigation/author/paper/status/paperStatus.html" />
     </list>
@@ -15,101 +21,33 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CreatePatchCommitExecutor">
-    <option name="PATCH_PATH" value="D:\servers\Ampps\www\works\Conference-tool" />
+    <option name="PATCH_PATH" value="" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="paperStatus.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/styles/author/paper/status/paperStatus.css">
+    <leaf>
+      <file leaf-file-name="paperStatus.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/navigation/author/paper/status/paperStatus.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="143" column="1" lean-forward="false" selection-start-line="143" selection-start-column="1" selection-end-line="143" selection-end-column="1" />
+            <state relative-caret-position="335">
+              <caret line="47" column="29" lean-forward="false" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="paperStatus.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/navigation/author/paper/status/paperStatus.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="128" column="0" lean-forward="true" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
-              <folding>
-                <element signature="n#style#0;n#a#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="paperStatus.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="paperStatus.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/pages/author/paper/status/paperStatus.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="194" column="29" lean-forward="true" selection-start-line="194" selection-start-column="29" selection-end-line="194" selection-end-column="29" />
+            <state relative-caret-position="446">
+              <caret line="375" column="2" lean-forward="true" selection-start-line="375" selection-start-column="2" selection-end-line="375" selection-end-column="2" />
               <folding>
-                <element signature="e#0#43#0" expanded="false" />
-                <marker date="1498530860288" expanded="true" signature="3361:3515" ph="..." />
-                <marker date="1498530860288" expanded="true" signature="3417:3454" ph="..." />
-                <marker date="1498530860288" expanded="true" signature="3663:3820" ph="..." />
-                <marker date="1498530860288" expanded="true" signature="3719:3756" ph="..." />
-                <marker date="1498530860288" expanded="true" signature="3972:4123" ph="..." />
-                <marker date="1498530860288" expanded="true" signature="4028:4065" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="getUser.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PHP/adminScripts/tracks/getUser.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="10" column="149" lean-forward="false" selection-start-line="10" selection-start-column="149" selection-end-line="10" selection-end-column="149" />
-              <folding>
-                <marker date="1498530800641" expanded="true" signature="486:540" ph="SELECT * FRO... Users" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="getMyPapers.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PHP/authorScripts/getMyPapers.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="15" column="39" lean-forward="false" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
-              <folding>
-                <marker date="1498497177497" expanded="true" signature="394:429" ph="SELECT * FRO... tracks" />
-                <marker date="1498497177497" expanded="true" signature="394:436" ph="SELECT * FRO... tracks" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="getAllTracks.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PHP/adminScripts/tracks/getAllTracks.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="19" column="51" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="41" selection-end-column="1" />
-              <folding>
-                <marker date="1498462955442" expanded="true" signature="366:388" ph="SELECT * FRO... tracks" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/pages/evaluator/evaluate/script.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="93" column="23" lean-forward="true" selection-start-line="90" selection-start-column="0" selection-end-line="116" selection-end-column="2" />
-              <folding>
-                <marker date="1498471705869" expanded="true" signature="3311:3465" ph="..." />
-                <marker date="1498471705869" expanded="false" signature="3367:3404" ph="..." />
-                <marker date="1498471705869" expanded="true" signature="3613:3770" ph="..." />
-                <marker date="1498471705869" expanded="false" signature="3669:3706" ph="..." />
-                <marker date="1498471705869" expanded="true" signature="3922:4073" ph="..." />
-                <marker date="1498471705869" expanded="false" signature="3978:4015" ph="..." />
+                <marker date="1498532924317" expanded="true" signature="3387:3541" ph="..." />
+                <marker date="1498532924317" expanded="false" signature="3443:3480" ph="..." />
+                <marker date="1498532924317" expanded="true" signature="3689:3846" ph="..." />
+                <marker date="1498532924317" expanded="false" signature="3745:3782" ph="..." />
+                <marker date="1498532924317" expanded="true" signature="3998:4149" ph="..." />
+                <marker date="1498532924317" expanded="false" signature="4054:4091" ph="..." />
               </folding>
             </state>
           </provider>
@@ -118,120 +56,51 @@
       <file leaf-file-name="evaluate.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/navigation/evaluator/evaluate/evaluate.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="86" lean-forward="true" selection-start-line="18" selection-start-column="86" selection-end-line="18" selection-end-column="86" />
-              <folding>
-                <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="498">
+              <caret line="132" column="74" lean-forward="false" selection-start-line="132" selection-start-column="74" selection-end-line="132" selection-end-column="74" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PaperSubmission.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/navigation/author/paper/submit/PaperSubmission.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="108" column="31" lean-forward="true" selection-start-line="107" selection-start-column="16" selection-end-line="112" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-        <option value="CSS File" />
-        <option value="JavaScript File" />
-      </list>
-    </option>
-  </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>sign-in-btn</find>
-      <find>cu</find>
-      <find>getSessionDetails</find>
-      <find>trans</find>
-      <find>box</find>
-      <find>ajax</find>
-      <find>d81b60</find>
-      <find>addnew</find>
-      <find>get</find>
-      <find>firs</find>
-      <find>nav</find>
-      <find>getalltracks.php</find>
-      <find>for</find>
-      <find>console</find>
-      <find>log</find>
-      <find>row</find>
-      <find>this</find>
-      <find>do-animation</find>
-      <find>show</find>
-      <find>show-btn</find>
-      <find>consol</find>
-      <find>constr</find>
-      <find>timestamp</find>
-      <find>toast</find>
+      <find>choose</find>
+      <find>file</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/PHP/registration.php" />
-        <option value="$PROJECT_DIR$/PHP/sessionHandlers/sessionCheck.php" />
-        <option value="$PROJECT_DIR$/PHP/sessionHandlers/login.php" />
-        <option value="$PROJECT_DIR$/PHP/sessionHandlers/logout.php" />
-        <option value="$PROJECT_DIR$/css/tools/Frameworks/materialize/css/materialize.css" />
-        <option value="$PROJECT_DIR$/css/styles/landingPage/landingpage.css" />
-        <option value="$PROJECT_DIR$/PHP/sessionHandlers/checksession.php" />
-        <option value="$PROJECT_DIR$/js/pages/admin/tracksSetup/tracksSetup.js" />
-        <option value="$PROJECT_DIR$/navigation/author/paper/PaperSubmission.html" />
-        <option value="$PROJECT_DIR$/css/styles/author/paper/submit/stylr.css" />
-        <option value="$PROJECT_DIR$/navigation/author/paper/submit/123.html" />
-        <option value="$PROJECT_DIR$/js/pages/author/paper/submit/chucnks.js" />
-        <option value="$PROJECT_DIR$/PHP/sessionHandlers/sessionCreator.php" />
-        <option value="$PROJECT_DIR$/PHP/sessionHandlers/test.php" />
-        <option value="$PROJECT_DIR$/PHP/Connection.php" />
-        <option value="$PROJECT_DIR$/js/pages/author/author_homepage.js" />
-        <option value="$PROJECT_DIR$/css/styles/author/homePage/homepage.css" />
-        <option value="$PROJECT_DIR$/css/styles/admin/conferenceManagement/Tracks/style.css" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/navigation/admin/admin_homepage.html" />
-        <option value="$PROJECT_DIR$/css/styles/author/paper/submit/style.css" />
-        <option value="$PROJECT_DIR$/js/pages/landingPage/landingPage.js" />
-        <option value="$PROJECT_DIR$/css/styles/general.css" />
-        <option value="$PROJECT_DIR$/js/pages/generalScript.js" />
-        <option value="$PROJECT_DIR$/navigation/author/paper/submit/PaperSubmission.html" />
-        <option value="$PROJECT_DIR$/navigation/admin/conferenceManagement/Tracks/tracksSetup.html" />
-        <option value="$PROJECT_DIR$/css/styles/general-innerpages.css" />
-        <option value="$PROJECT_DIR$/css/styles/evaluator/homepage/homepage.css" />
-        <option value="$PROJECT_DIR$/css/tools/animations/animate/animate.css" />
-        <option value="$PROJECT_DIR$/navigation/evaluator/evaluator_homepage.html" />
-        <option value="$PROJECT_DIR$/js/pages/evaluator/homepage/script.js" />
-        <option value="$PROJECT_DIR$/js/pages/author/paper/submit/script.js" />
-        <option value="$PROJECT_DIR$/PHP/adminScripts/tracks/getTrack.php" />
-        <option value="$PROJECT_DIR$/PHP/adminScripts/tracks/getAllPapers.php" />
-        <option value="$PROJECT_DIR$/PHP/adminScripts/tracks/getAllTracks.php" />
-        <option value="$PROJECT_DIR$/PHP/authorScripts/submitPaper.php" />
-        <option value="$PROJECT_DIR$/PHP/generalScripts/getUserDetails.php" />
-        <option value="$PROJECT_DIR$/PHP/adminScripts/tracks/addNewTrack.php" />
-        <option value="$PROJECT_DIR$/PHP/evaluator/evaluate.php" />
-        <option value="$PROJECT_DIR$/PHP/generalScripts/getPaperStatus.php" />
-        <option value="$PROJECT_DIR$/js/pages/evaluator/evaluate/script.js" />
-        <option value="$PROJECT_DIR$/js/pages/admin/homepage.js" />
         <option value="$PROJECT_DIR$/navigation/evaluator/evaluate/evaluate.html" />
-        <option value="$PROJECT_DIR$/css/styles/author/paper/status/paperStatus.css" />
-        <option value="$PROJECT_DIR$/navigation/author/author_homepage.html" />
-        <option value="$PROJECT_DIR$/js/pages/author/paper/status/paperStatus.ks.js" />
-        <option value="$PROJECT_DIR$/PHP/authorScripts/getMyPapers.php" />
-        <option value="$PROJECT_DIR$/navigation/author/paper/status/paperStatus.html" />
-        <option value="$PROJECT_DIR$/PHP/adminScripts/tracks/getUser.php" />
         <option value="$PROJECT_DIR$/js/pages/author/paper/status/paperStatus.js" />
+        <option value="$PROJECT_DIR$/navigation/author/paper/status/paperStatus.html" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>false</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>false</other-services-enabled>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
@@ -258,6 +127,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -394,298 +265,20 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Conference-tool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Conference-tool" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Conference-tool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Conference-tool" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="evaluator" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Conference-tool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Conference-tool" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="evaluator" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="evaluate" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Conference-tool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Conference-tool" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="author" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Conference-tool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Conference-tool" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="author" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="paper" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="submit" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Conference-tool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Conference-tool" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="author" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="paper" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="status" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Conference-tool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Conference-tool" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Conference-tool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Conference-tool" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Conference-tool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Conference-tool" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PHP" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Conference-tool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Conference-tool" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PHP" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sessionHandlers" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Conference-tool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Conference-tool" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PHP" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="generalScripts" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Conference-tool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Conference-tool" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PHP" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authorScripts" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Conference-tool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Conference-tool" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PHP" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adminScripts" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tracks" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../fileUploadDemo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="JavaScriptPreferStrict" value="false" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\servers\Ampps\www\works\Conference-tool\PHP\adminScripts\tracks" />
-      <recent name="D:\servers\Ampps\www\works\Conference-tool\js\pages\evaluator\evaluate" />
-      <recent name="D:\servers\Ampps\www\works\Conference-tool\navigation\evaluator\evaluate" />
-      <recent name="D:\servers\Ampps\www\works\Conference-tool\navigation\author\paper\submit" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\servers\Ampps\www\works\Conference-tool\navigation\author\paper\submit" />
-    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
@@ -716,12 +309,6 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -750,229 +337,49 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="fde80ae0-e179-4380-8c15-64bdbd6dd14e" name="Default" comment="" />
-      <created>1494585630306</created>
+      <changelist id="57db3dc0-4cf5-4b75-9371-65788ca4c00b" name="Default" comment="" />
+      <created>1498531580373</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1494585630306</updated>
-      <workItem from="1494585631636" duration="15952000" />
-      <workItem from="1494830311670" duration="238000" />
-      <workItem from="1494862318514" duration="36234000" />
-      <workItem from="1495009500197" duration="519000" />
-      <workItem from="1495012551773" duration="12610000" />
-      <workItem from="1495078833190" duration="4936000" />
-      <workItem from="1495173453593" duration="703000" />
-      <workItem from="1495351499495" duration="38515000" />
-      <workItem from="1495475214862" duration="29896000" />
-      <workItem from="1495537892566" duration="2204000" />
-      <workItem from="1495540444540" duration="99000" />
-      <workItem from="1495608359898" duration="18000" />
-      <workItem from="1498118063256" duration="405000" />
-      <workItem from="1498284276851" duration="968000" />
-      <workItem from="1498314859901" duration="25299000" />
-      <workItem from="1498453306877" duration="12741000" />
-      <workItem from="1498470763904" duration="9622000" />
-      <workItem from="1498529852362" duration="1017000" />
+      <updated>1498531580373</updated>
+      <workItem from="1498531581590" duration="1359000" />
     </task>
-    <task id="LOCAL-00001" summary="[1] track cards getting creator name from database and populating&#10;[2] Create session php ready, Login Ready&#10;&#10;todo&#10;&#10;[1] Logout">
-      <created>1494925427773</created>
+    <task id="LOCAL-00001" summary="paper resubmission work">
+      <created>1498531725339</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1494925427773</updated>
+      <updated>1498531725339</updated>
     </task>
-    <task id="LOCAL-00002" summary="log in and log out has been handled">
-      <created>1494930402371</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1494930402371</updated>
-    </task>
-    <task id="LOCAL-00003" summary="session status checking and if logged out and came back to the page, request to sign in again">
-      <created>1494956326822</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1494956326822</updated>
-    </task>
-    <task id="LOCAL-00004" summary="sign in front end corrected">
-      <created>1494999160714</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1494999160714</updated>
-    </task>
-    <task id="LOCAL-00005" summary="new signup front end">
-      <created>1495008476822</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1495008476822</updated>
-    </task>
-    <task id="LOCAL-00006" summary="session validation">
-      <created>1495039884864</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1495039884864</updated>
-    </task>
-    <task id="LOCAL-00007" summary="paper submit html and styling done">
-      <created>1495433486807</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1495433486807</updated>
-    </task>
-    <task id="LOCAL-00008" summary="responsiveness">
-      <created>1495433759142</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1495433759142</updated>
-    </task>
-    <task id="LOCAL-00009" summary="paper submission done">
-      <created>1495458521300</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1495458521300</updated>
-    </task>
-    <task id="LOCAL-00010" summary="responsive background image">
-      <created>1495461397147</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1495461397147</updated>
-    </task>
-    <task id="LOCAL-00011" summary="track approval card">
-      <created>1495514559281</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1495514559281</updated>
-    </task>
-    <task id="LOCAL-00012" summary="session validation">
-      <created>1495523856412</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1495523856412</updated>
-    </task>
-    <task id="LOCAL-00013" summary="evaluate paper module">
-      <created>1495528651331</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1495528651331</updated>
-    </task>
-    <task id="LOCAL-00014" summary="safe save1">
-      <created>1495532815837</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1495532815837</updated>
-    </task>
-    <task id="LOCAL-00015" summary="logoout fix in evaluator">
-      <created>1495539862118</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1495539862118</updated>
-    </task>
-    <task id="LOCAL-00016" summary="evaluator evaluation approval populating cards">
-      <created>1498391697868</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1498391697868</updated>
-    </task>
-    <task id="LOCAL-00017" summary="evaluator evaluation card contents dynamic retrival">
-      <created>1498455031811</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1498455031811</updated>
-    </task>
-    <task id="LOCAL-00018" summary="session check on each php file and evaluator evaluate php progressing">
-      <created>1498465054135</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1498465054135</updated>
-    </task>
-    <task id="LOCAL-00019" summary="db backup">
-      <created>1498468263628</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1498468263628</updated>
-    </task>
-    <task id="LOCAL-00020" summary="status of paper check">
-      <created>1498470815720</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1498470815720</updated>
-    </task>
-    <task id="LOCAL-00021" summary="evaluator paper approve and reject">
-      <created>1498471471127</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1498471471127</updated>
-    </task>
-    <task id="LOCAL-00022" summary="evaluator paper approve and reject">
-      <created>1498473872773</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1498473872773</updated>
-    </task>
-    <task id="LOCAL-00023" summary="author status check">
-      <created>1498497239861</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1498497239861</updated>
-    </task>
-    <option name="localTasksCounter" value="24" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="191976000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+    <option name="totallyTimeSpent" value="1359000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2549168" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32766616" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -982,458 +389,58 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[1] track cards getting creator name from database and populating&#10;[2] Create session php ready, Login Ready&#10;&#10;todo&#10;&#10;[1] Logout" />
-    <MESSAGE value="log in and log out has been handled" />
-    <MESSAGE value="session status checking and if logged out and came back to the page, request to sign in again" />
-    <MESSAGE value="sign in front end corrected" />
-    <MESSAGE value="new signup front end" />
-    <MESSAGE value="paper submit html and styling done" />
-    <MESSAGE value="responsiveness" />
-    <MESSAGE value="paper submission done" />
-    <MESSAGE value="responsive background image" />
-    <MESSAGE value="track approval card" />
-    <MESSAGE value="session validation" />
-    <MESSAGE value="evaluate paper module" />
-    <MESSAGE value="safe save1" />
-    <MESSAGE value="logoout fix in evaluator" />
-    <MESSAGE value="evaluator evaluation approval populating cards" />
-    <MESSAGE value="evaluator evaluation card contents dynamic retrival" />
-    <MESSAGE value="session check on each php file and evaluator evaluate php progressing" />
-    <MESSAGE value="db backup" />
-    <MESSAGE value="status of paper check" />
-    <MESSAGE value="evaluator paper approve and reject" />
-    <MESSAGE value="author status check" />
-    <option name="LAST_COMMIT_MESSAGE" value="author status check" />
+    <MESSAGE value="paper resubmission work" />
+    <option name="LAST_COMMIT_MESSAGE" value="paper resubmission work" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/PHP/authorScripts/submitPaper.php</url>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="4" />
-    </breakpoint-manager>
+    <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/pages/author/paper/submit/chucnks.js" />
-    <entry file="file://$PROJECT_DIR$/imgs/photos/clg-gate.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/pages/author/author_homepage.js">
+    <entry file="file://$PROJECT_DIR$/navigation/evaluator/evaluate/evaluate.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/tools/Frameworks/Foundation/foundation-flex.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41395">
-          <caret line="2435" column="1" lean-forward="false" selection-start-line="2435" selection-start-column="1" selection-end-line="2435" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/styles/author/homePage/homepage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="52" column="9" lean-forward="false" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/styles/admin/conferenceManagement/Tracks/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/styles/author/paper/submit/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/styles/general.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
-          <caret line="96" column="1" lean-forward="false" selection-start-line="96" selection-start-column="1" selection-end-line="96" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/tools/Frameworks/materialize/css/materialize.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/web-forms2.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="438" column="14" lean-forward="false" selection-start-line="438" selection-start-column="14" selection-end-line="438" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/pages/landingPage/landingPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="214" column="69" lean-forward="false" selection-start-line="214" selection-start-column="69" selection-end-line="214" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/tools/icon.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/tools/animations/animate/animate.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="12" column="25" lean-forward="false" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/pages/evaluator/homepage/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="58" column="5" lean-forward="false" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+        <state relative-caret-position="498">
+          <caret line="132" column="74" lean-forward="false" selection-start-line="132" selection-start-column="74" selection-end-line="132" selection-end-column="74" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/navigation/admin/conferenceManagement/Tracks/tracksSetup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="190" column="82" lean-forward="false" selection-start-line="190" selection-start-column="82" selection-end-line="190" selection-end-column="82" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/navigation/author/paper/submit/PaperSubmission.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="130" column="80" lean-forward="false" selection-start-line="130" selection-start-column="80" selection-end-line="130" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/pages/author/paper/submit/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="112" column="7" lean-forward="true" selection-start-line="95" selection-start-column="7" selection-end-line="112" selection-end-column="7" />
+        <state relative-caret-position="189">
+          <caret line="108" column="31" lean-forward="true" selection-start-line="107" selection-start-column="16" selection-end-line="112" selection-end-column="22" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/tools/Frameworks/materialize/js/materialize.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="232" column="2351" lean-forward="false" selection-start-line="232" selection-start-column="2351" selection-end-line="232" selection-end-column="2351" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/pages/admin/tracksSetup/tracksSetup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="133" column="2" lean-forward="false" selection-start-line="133" selection-start-column="2" selection-end-line="133" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PHP/evaluator.php" />
-    <entry file="file://$PROJECT_DIR$/PHP/adminScripts/tracks/getAllPapers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="109" lean-forward="false" selection-start-line="9" selection-start-column="109" selection-end-line="9" selection-end-column="109" />
-          <folding>
-            <element signature="e#6#91#0#PHP" expanded="false" />
-            <marker date="1498462911794" expanded="true" signature="323:345" ph="SELECT * FRO... Papers" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PHP/adminScripts/tracks/getTrack.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="58" lean-forward="true" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="58" />
-          <folding>
-            <element signature="e#6#91#0#PHP" expanded="false" />
-            <marker date="1498459846849" expanded="true" signature="491:550" ph="SELECT * FRO... Tracks" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PHP/generalScripts/getUserDetails.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-          <folding>
-            <marker date="1498463218612" expanded="true" signature="491:547" ph="SELECT * FRO... Users" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PHP/Connection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PHP/sessionHandlers/sessionCreator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PHP/sessionHandlers/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-          <folding>
-            <marker date="1494931007748" expanded="true" signature="394:491" ph="SELECT * FRO... Users" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PHP/generalScripts/getPaperStatus.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="31" column="38" lean-forward="false" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
-          <folding>
-            <element signature="e#6#90#0#PHP" expanded="true" />
-            <marker date="1498470170959" expanded="true" signature="564:631" ph="SELECT Statu... approvals" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PHP/evaluator/evaluate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="55" column="13" lean-forward="false" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PHP/authorScripts/submitPaper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="3" column="70" lean-forward="false" selection-start-line="3" selection-start-column="70" selection-end-line="3" selection-end-column="70" />
-          <folding>
-            <marker date="1498463028990" expanded="true" signature="1166:1398" ph="INSERT INTO `Papers`... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/navigation/evaluator/evaluator_homepage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="68" column="20" lean-forward="false" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/styles/#colorsAndStyles/colors.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-151">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/styles/general-innerpages.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1269">
-          <caret line="207" column="43" lean-forward="false" selection-start-line="207" selection-start-column="43" selection-end-line="207" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PHP/sessionHandlers/logout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="9" lean-forward="false" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/pages/admin/homepage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="45" column="4" lean-forward="false" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/navigation/admin/admin_homepage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="49" column="63" lean-forward="true" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-848">
-          <caret line="151" column="29" lean-forward="true" selection-start-line="151" selection-start-column="29" selection-end-line="151" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/windows.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PHP/registration.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="45" column="23" lean-forward="true" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
-          <folding>
-            <marker date="1494931007722" expanded="true" signature="719:768" ph="SELECT * FRO... participants" />
-            <marker date="1494931007722" expanded="true" signature="1111:1523" ph="INSERT INTO Users... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/navigation/author/author_homepage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="17" column="90" lean-forward="false" selection-start-line="17" selection-start-column="69" selection-end-line="17" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/styles/evaluator/homepage/homepage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1494">
-          <caret line="26" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="143" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/pages/generalScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/navigation/evaluator/evaluate/evaluate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="86" lean-forward="true" selection-start-line="18" selection-start-column="86" selection-end-line="18" selection-end-column="86" />
-          <folding>
-            <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/styles/author/paper/status/paperStatus.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="143" column="1" lean-forward="false" selection-start-line="143" selection-start-column="1" selection-end-line="143" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PHP/adminScripts/tracks/getAllTracks.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="19" column="51" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="41" selection-end-column="1" />
-          <folding>
-            <marker date="1498462955442" expanded="true" signature="366:388" ph="SELECT * FRO... tracks" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PHP/sessionHandlers/test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="24" lean-forward="false" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PHP/adminScripts/tracks/addNewTrack.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="31" column="57" lean-forward="false" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="60" />
-          <folding>
-            <marker date="1498459311965" expanded="true" signature="491:542" ph="SELECT * FRO... Tracks" />
-            <marker date="1498459311965" expanded="true" signature="858:1047" ph="INSERT INTO Tracks... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PHP/authorScripts/getMyPapers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="15" column="39" lean-forward="false" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
-          <folding>
-            <marker date="1498497177497" expanded="true" signature="394:429" ph="SELECT * FRO... tracks" />
-            <marker date="1498497177497" expanded="true" signature="394:436" ph="SELECT * FRO... tracks" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/pages/evaluator/evaluate/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="93" column="23" lean-forward="true" selection-start-line="90" selection-start-column="0" selection-end-line="116" selection-end-column="2" />
-          <folding>
-            <marker date="1498471705869" expanded="true" signature="3311:3465" ph="..." />
-            <marker date="1498471705869" expanded="false" signature="3367:3404" ph="..." />
-            <marker date="1498471705869" expanded="true" signature="3613:3770" ph="..." />
-            <marker date="1498471705869" expanded="false" signature="3669:3706" ph="..." />
-            <marker date="1498471705869" expanded="true" signature="3922:4073" ph="..." />
-            <marker date="1498471705869" expanded="false" signature="3978:4015" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PHP/adminScripts/tracks/getUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="10" column="149" lean-forward="false" selection-start-line="10" selection-start-column="149" selection-end-line="10" selection-end-column="149" />
-          <folding>
-            <marker date="1498530800641" expanded="true" signature="486:540" ph="SELECT * FRO... Users" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/navigation/author/paper/status/paperStatus.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="128" column="0" lean-forward="true" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#a#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/pages/author/paper/status/paperStatus.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="194" column="29" lean-forward="true" selection-start-line="194" selection-start-column="29" selection-end-line="194" selection-end-column="29" />
+        <state relative-caret-position="446">
+          <caret line="375" column="2" lean-forward="true" selection-start-line="375" selection-start-column="2" selection-end-line="375" selection-end-column="2" />
           <folding>
-            <element signature="e#0#43#0" expanded="false" />
-            <marker date="1498530860288" expanded="true" signature="3361:3515" ph="..." />
-            <marker date="1498530860288" expanded="true" signature="3417:3454" ph="..." />
-            <marker date="1498530860288" expanded="true" signature="3663:3820" ph="..." />
-            <marker date="1498530860288" expanded="true" signature="3719:3756" ph="..." />
-            <marker date="1498530860288" expanded="true" signature="3972:4123" ph="..." />
-            <marker date="1498530860288" expanded="true" signature="4028:4065" ph="..." />
+            <marker date="1498532924317" expanded="true" signature="3387:3541" ph="..." />
+            <marker date="1498532924317" expanded="false" signature="3443:3480" ph="..." />
+            <marker date="1498532924317" expanded="true" signature="3689:3846" ph="..." />
+            <marker date="1498532924317" expanded="false" signature="3745:3782" ph="..." />
+            <marker date="1498532924317" expanded="true" signature="3998:4149" ph="..." />
+            <marker date="1498532924317" expanded="false" signature="4054:4091" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/block.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="564">
+          <caret line="228" column="16" lean-forward="false" selection-start-line="228" selection-start-column="16" selection-end-line="228" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/navigation/author/paper/status/paperStatus.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="47" column="29" lean-forward="false" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
