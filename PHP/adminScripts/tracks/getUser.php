@@ -8,7 +8,7 @@
 
 session_start();
 
-if(isset($_SESSION['Email']) && $_SESSION['Privilege'] == 'Admin' ||  $_SESSION['Privilege'] == 'Evaluator'){
+if(isset($_SESSION['Email']) && $_SESSION['Privilege'] == 'Admin' ||  $_SESSION['Privilege'] == 'Evaluator' || $_SESSION['Privilege'] == 'Participant'){
     header('Content-type: application/json');
     include('../../Connection.php');
     if($_POST) {
